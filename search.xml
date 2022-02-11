@@ -24,6 +24,8 @@
     <title>test</title>
     <url>/2022/02/10/test/</url>
     <content><![CDATA[<p><a href="https://c-qaq.github.io/">我的主页</a></p>
+<span id="more"></span>
+
 <img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="100%" height="100%">
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
