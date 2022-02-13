@@ -18,19 +18,26 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
   </entry>
   <entry>
     <title>test</title>
     <url>/2022/02/10/test/</url>
-    <content><![CDATA[<p><a href="https://c-qaq.github.io/">我的主页</a></p>
+    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
 <span id="more"></span>
 
-<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="100%" height="100%">
+<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>test</tag>
       </tags>
