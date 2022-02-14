@@ -1312,7 +1312,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d0baf2;
+  background: #d50655;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2808,7 +2808,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
-  background-image: url("https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/10_trapped4_4k.jpg");
+  background-image: url("https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/wallhaven-e7ek7k_1920x1080.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
