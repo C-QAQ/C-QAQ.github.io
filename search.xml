@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Algorithm Problem Solving</title>
+    <url>/2022/02/20/Algorithm-Problem-Solving/</url>
+    <content><![CDATA[<hr>
+<details>
+<summary>AcWing</summary>
+<summary>
+
+<hr>
+<details>
+<summary>AcWing 4226. 非常可乐</summary>
+<summary>
+
+<p><a href="https://www.acwing.com/problem/content/description/4229/">原题链接</a></p>
+<details>
+<summary>ACcode</summary>
+<summary>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> st[<span class="number">101</span>][<span class="number">101</span>][<span class="number">101</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="comment">/* data */</span></span><br><span class="line">    <span class="type">int</span> a, b, c, cnt;</span><br><span class="line">&#125; node;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">m</span><span class="params">(<span class="number">3</span>)</span>, <span class="title">w</span><span class="params">(<span class="number">3</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i ++ ) cin &gt;&gt; m[i];</span><br><span class="line">    <span class="keyword">if</span> (!m[<span class="number">0</span>]) <span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">memset</span>(st, <span class="literal">false</span>, <span class="built_in">sizeof</span>(st));</span><br><span class="line">    queue&lt;node&gt; q;</span><br><span class="line">    q.<span class="built_in">push</span>(&#123;m[<span class="number">0</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;);</span><br><span class="line">    <span class="keyword">while</span> (!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">        node now = q.<span class="built_in">front</span>(); q.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="type">int</span> a = now.a, b = now.b, c = now.c, cnt = now.cnt;</span><br><span class="line">        <span class="keyword">if</span> ((a == b &amp;&amp; c == <span class="number">0</span>) || (a == c &amp;&amp; b == <span class="number">0</span>) || (b == c &amp;&amp; a == <span class="number">0</span>)) &#123;</span><br><span class="line">            cout &lt;&lt; cnt &lt;&lt; <span class="string">&quot;\n&quot;</span>; <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j ++ ) &#123;</span><br><span class="line">                w[<span class="number">0</span>] = a, w[<span class="number">1</span>] = b, w[<span class="number">2</span>] = c;</span><br><span class="line">                <span class="keyword">if</span> ((i ^ j) &amp;&amp; w[i] &amp;&amp; (m[j] - w[j])) &#123;</span><br><span class="line">                    <span class="type">int</span> to = <span class="built_in">min</span>(w[i], m[j] - w[j]);</span><br><span class="line">                    w[i] -= to, w[j] += to;</span><br><span class="line">                    <span class="keyword">if</span> (st[w[<span class="number">0</span>]][w[<span class="number">1</span>]][w[<span class="number">2</span>]]) <span class="keyword">continue</span>;</span><br><span class="line">                    st[w[<span class="number">0</span>]][w[<span class="number">1</span>]][w[<span class="number">2</span>]] = <span class="literal">true</span>;</span><br><span class="line">                    q.<span class="built_in">push</span>(&#123;w[<span class="number">0</span>], w[<span class="number">1</span>], w[<span class="number">2</span>], cnt + <span class="number">1</span>&#125;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;NO\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+</details>
+</details>
+
+<hr>
+<details>
+<summary>name1</summary>
+<summary>
+
+<details>
+<summary>name2</summary>
+<summary>
+
+<p><a href="https://www.baidu.com/">原题链接</a></p>
+<details>
+<summary>name3</summary>
+<summary>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">code</span><br></pre></td></tr></table></figure>
+</details>
+</details>
+</details>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/02/06/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
