@@ -38,24 +38,20 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/02/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
 <span id="more"></span>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Django</tag>
+      </tags>
   </entry>
   <entry>
     <title>test</title>
@@ -78,5 +74,133 @@
       <tags>
         <tag>test</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Linux</title>
+    <url>/2022/02/21/linux/</url>
+    <content><![CDATA[<blockquote>
+<p>Linux 学习</p>
+</blockquote>
+<p>​    <span id="more"></span></p>
+<h1 id="服务器管理"><a href="#服务器管理" class="headerlink" title="服务器管理"></a>服务器管理</h1><ul>
+<li><code>.ssh/config</code>文件中配置服务器别名</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host name</span><br><span class="line">    HostName ip</span><br><span class="line">    User username</span><br><span class="line">    Port port_id</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>配置免密登录 <code>ubuntu:ssh-copy-id username@ip</code></li>
+<li></li>
+</ul>
+<h1 id="Linux-用户和用户组设置"><a href="#Linux-用户和用户组设置" class="headerlink" title="Linux 用户和用户组设置"></a>Linux 用户和用户组设置</h1><ul>
+<li>创建新用户<code>ubuntu:adduser username</code></li>
+<li>为用户分配<em>sudo</em>权限<code>ubuntu:usermod -aG sudo username</code></li>
+</ul>
+<h1 id="Linux-应用安装"><a href="#Linux-应用安装" class="headerlink" title="Linux 应用安装"></a>Linux 应用安装</h1><ul>
+<li>获取最近的软件包列表<code>ubuntu:sudo apt-get update</code></li>
+</ul>
+<h1 id="scp-使用"><a href="#scp-使用" class="headerlink" title="scp 使用"></a>scp 使用</h1><ul>
+<li>传输文件到其他服务器<code>ubuntu: scp filename username@ip:path</code></li>
+</ul>
+<h1 id="软件源配置"><a href="#软件源配置" class="headerlink" title="软件源配置"></a>软件源配置</h1><p>更改 <code>/etc/apt/sources.list</code>文件为所需软件源</p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">清华软件源</a></p>
+<h1 id="docker-注：转载至-AcWing-Linux"><a href="#docker-注：转载至-AcWing-Linux" class="headerlink" title="docker 注：转载至 AcWing.Linux"></a>docker <em>注：转载至 <a href="https://www.acwing.com/">AcWing.Linux</a></em></h1><ul>
+<li><p><strong>安装地址<a href="https://docs.docker.com/engine/install/ubuntu/">ubuntu</a></strong></p>
+</li>
+<li><p><strong>将当前用户添加到docker用户组</strong><br>为了避免每次使用docker命令都需要加上sudo权限，可以将当前用户加入安装中自动创建的docker用户组(可以参考官方文档)：</p>
+<p><code>sudo usermod -aG docker $USER</code></p>
+</li>
+<li><p><strong>镜像（images）</strong></p>
+<ol>
+<li>docker pull ubuntu:20.04：拉取一个镜像</li>
+<li>docker images：列出本地所有镜像</li>
+<li>docker image rm ubuntu:20.04 或 docker rmi ubuntu:20.04：删除镜像ubuntu:20.04</li>
+<li>docker [container] commit CONTAINER IMAGE_NAME:TAG：创建某个container的镜像</li>
+<li>docker save -o ubuntu_20_04.tar ubuntu:20.04：将镜像ubuntu:20.04导出到本地文件ubuntu_20_04.tar中</li>
+<li>docker load -i ubuntu_20_04.tar：将镜像ubuntu:20.04从本地文件ubuntu_20_04.tar中加载出来</li>
+</ol>
+</li>
+<li><p><strong>容器(container)</strong></p>
+<ol>
+<li><p>docker [container] create -it ubuntu:20.04：利用镜像ubuntu:20.04创建一个容器。</p>
+</li>
+<li><p>docker ps -a：查看本地的所有容器</p>
+</li>
+<li><p>docker [container] start CONTAINER：启动容器</p>
+</li>
+<li><p>docker [container] stop CONTAINER：停止容器</p>
+</li>
+<li><p>docker [container] restart CONTAINER：重启容器</p>
+</li>
+<li><p>docker [contaienr] run -itd ubuntu:20.04：创建并启动一个容器</p>
+</li>
+<li><p>docker [container] attach CONTAINER：进入容器</p>
+<ul>
+<li>先按Ctrl-p，再按Ctrl-q可以挂起容器</li>
+</ul>
+</li>
+<li><p>docker [container] exec CONTAINER COMMAND：在容器中执行命令</p>
+</li>
+<li><p>docker [container] rm CONTAINER：删除容器</p>
+</li>
+<li><p>docker container prune：删除所有已停止的容器</p>
+</li>
+<li><p>docker export -o xxx.tar CONTAINER：将容器CONTAINER导出到本地文件xxx.tar中</p>
+</li>
+<li><p>docker import xxx.tar image_name:tag：将本地文件xxx.tar导入成镜像，并将镜像命名为image_name:tag</p>
+</li>
+<li><p>docker export&#x2F;import与docker save&#x2F;load的区别：</p>
+<ul>
+<li><p>export&#x2F;import会丢弃历史记录和元数据信息，仅保存容器当时的快照状态</p>
+</li>
+<li><p>save&#x2F;load会保存完整记录，体积更大</p>
+</li>
+</ul>
+</li>
+<li><p>docker top CONTAINER：查看某个容器内的所有进程</p>
+</li>
+<li><p>docker stats：查看所有容器的统计信息，包括CPU、内存、存储、网络等信息</p>
+</li>
+<li><p>docker cp xxx CONTAINER:xxx 或 docker cp CONTAINER:xxx xxx：在本地和容器间复制文件</p>
+</li>
+<li><p>docker rename CONTAINER1 CONTAINER2：重命名容器</p>
+</li>
+<li><p>docker update CONTAINER –memory 500MB：修改容器限制</p>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><ul>
+<li>过滤某些文件的上传：<ol>
+<li>在Git根目录下创建<code>.gitignore    </code>文件</li>
+<li>将需要过滤的文件名按照列表的形式一行一个保存在<code>.gitignore</code>文件中<br><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220221180050.png" alt="实例"></li>
+</ol>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/02/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
   </entry>
 </search>
