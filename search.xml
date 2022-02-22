@@ -38,6 +38,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/02/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+  </entry>
+  <entry>
     <title>Django</title>
     <url>/2022/02/21/django/</url>
     <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
@@ -54,25 +74,19 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2022/02/10/test/</url>
-    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
-<span id="more"></span>
+    <title>html</title>
+    <url>/2022/02/22/html/</url>
+    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
-
-<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+<ul>
+<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
+</li>
+<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
-        <tag>test</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -184,23 +198,82 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/02/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <title>计算机网络</title>
+    <url>/2022/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    <content><![CDATA[<p>【<a href="https://www.yinkuiwang.cn/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95/">推荐博客</a> <a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">推荐博客2</a>】</p>
+<h1 id="第一章-计算机网络和因特网"><a href="#第一章-计算机网络和因特网" class="headerlink" title="第一章 计算机网络和因特网"></a>第一章 计算机网络和因特网</h1><h2 id="1-1-什么是因特网"><a href="#1-1-什么是因特网" class="headerlink" title="1.1 什么是因特网"></a>1.1 什么是因特网</h2><p>​    因特网（Internet）是一组全球信息资源的总汇。有一种粗略的说法，认为INTERNET是由于许多小的网络（<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>）互联而成的一个逻辑网，每个<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>中连接着若干台计算机（<a href="https://baike.baidu.com/item/%E4%B8%BB%E6%9C%BA/455151">主机</a>）。Internet以相互交流信息资源为目的，基于一些共同的协议，并通过许多<a href="https://baike.baidu.com/item/%E8%B7%AF%E7%94%B1%E5%99%A8/108294">路由器</a>和公共互联网而成，它是一个信息资源和资源共享的集合。【<a href="https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91/114119">百度百科</a>】</p>
+<h3 id="1-1-1-具体构成描述"><a href="#1-1-1-具体构成描述" class="headerlink" title="1.1.1 具体构成描述"></a>1.1.1 具体构成描述</h3><img src="https://s2.ax1x.com/2019/12/13/QgUHg0.png" />
+
+<ul>
+<li><p>因特网是一个世界范围的计算机网络，即它是一个互联了遍及全世界数十亿计算设备 的网络。</p>
+</li>
+<li><p>设备都称为主机(host)或端系统(end system)。</p>
+</li>
+<li><p>端系统通过通信链路(communication link)和分组交换机(packet switch)连接到一 起。</p>
+</li>
+<li><p>通信链路由不同类型的物理媒体组成：这些物理媒体包括同轴电缆、铜线、光纤和无线电频谱。不同的链路能够以不同的速率传输 数据，链路的传输速率(transmission rate)以比特&#x2F;秒(bit&#x2F;s,或bps)度量。</p>
+</li>
+<li><p>分组：当一台端系 统要向另一台端系统发送数据时，发送端系统将数据分段，并为每段加上首部字节，这些分组通过网络发送到目的端系统，在那里被装配成初始数据。</p>
+</li>
+<li><p>端系统通过因特网服务提供商(Internet Service Provider, ISP) 接入因特网。</p>
+</li>
+<li><p>分组交换机从它的一条入通信链路接收到达的分组，并从它的一条出通信链路转发该分组。但在当今的因特网中，两种最著 名的类型是路由器(router)和链路层交换机(link-layer switch)。</p>
+</li>
+<li><p>路径：从发送端系统到接收端系统，一个分组所经历的一系列通信链路和分组交换机称为通过该网络的路径(mute或path)。</p>
+</li>
+<li><p>端系统通过因特网服务提供商(Internet Service Provider, ISP) 接入因特网。每个ISP自身就是一个由多台分组交换机和多段通信链路组成的网络。不同的ISP为端系统提供了各种不同类型的网络接入（各种调制解调器、高速局域网接入和无线接入）。无论是较高层还是较低层ISP网络，它们每个都是独立管理的，运行着IP协议，遵从一定的命名和地址规则。</p>
+</li>
+<li><p>端系统、分组交换机和其他因特网部件都要运行一系列协议(protocol), 这些协议控制因特网中信息的接收和发送。TCP (Transmission Control Protocol,传输控制协议)和IP (Internet Protocol,网际协议)是因特网中两个最为重要的协议。IP协议定义了在路由器 和端系统之间发送和接收的分组式。因特网的主要协议统称为TCP&#x2F;IP。</p>
+</li>
+<li><p>公共因特网：特定网络，因特网。网络的网络，即将网络连接起来的网络。</p>
+</li>
+<li><p>内联网：专用网络，这些网络内的主机不能与专用网络外部的主机交换信息（除非这些信息通过了所谓的防火墙，否则防火墙一般会限制报文进入和流出网络）。</p>
+</li>
+</ul>
+<h3 id="1-1-2-服务描述"><a href="#1-1-2-服务描述" class="headerlink" title="1.1.2 服务描述"></a>1.1.2 服务描述</h3><ul>
+<li><p>分布式应用程序(distributed applicalion)：涉及多个相互交换数据的端系统（如：多人多端游戏，多人实时聊天软件，视屏会议，基于位置推荐系统）。</p>
+</li>
+<li><p>与因特网相连的端系统提供了一个套接字接口(socket interface),该接口规定了运行 在一个端系统上的程序请求因特网基础设施向运行在另一个端系统上的特定目的地程序交 付数据的方式。</p>
+</li>
+<li><p>与因特网相连的端系统提供了一个应用编程接口（Application Programming Interface，API），API规定了运行在一个端系统上的软件请求因特网基础设施向另一个端系统上的特定目的地软件交付数据的方式。因特网是一种基础设施，新应用程序正在其上不断地被发明和设置。</p>
+</li>
+</ul>
+<h3 id="1-1-3什么是协议"><a href="#1-1-3什么是协议" class="headerlink" title="1.1.3什么是协议"></a>1.1.3什么是协议</h3><blockquote>
+<p>计算机网络中另一个重要的时髦术语:协议(protocol)。</p>
+</blockquote>
+<ul>
+<li>用人类活动进行类比</li>
+</ul>
+<p><img src="https://i.loli.net/2020/03/22/RS7Lpk2YjGtCnKV.png"></p>
+<p>类似于人们在交谈中使用的说话方式（和不同类型的人交谈的时候交谈方式一般不同）。交谈方式不符合就不能进行友好的交谈👬。因特网的所有活动，凡是涉及两个或多个通信的远程实体都受协议限制。</p>
+<ul>
+<li>协议 (protocol) 定义了在两个或多个通信实体之间交换的报文的格式和顺序，以及报文发送和&#x2F;或接收一条报文或其他事件所采取的动作。</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2022/02/10/test/</url>
+    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
 <span id="more"></span>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
   </entry>
 </search>
