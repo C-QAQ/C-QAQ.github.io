@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
+<span id="more"></span>
+
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Django</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>html</title>
+    <url>/2022/02/22/html/</url>
+    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
+</li>
+<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2022/02/10/test/</url>
+    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
+<span id="more"></span>
+
+<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
+
+<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Algorithm Problem Solving</title>
     <url>/2022/02/20/Algorithm-Problem-Solving/</url>
     <content><![CDATA[<p><strong>简介</strong></p>
@@ -35,58 +89,6 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>Algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Django</title>
-    <url>/2022/02/21/django/</url>
-    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
-<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
-<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
-<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
-<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
-</ol>
-<span id="more"></span>
-
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Django</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/02/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-  </entry>
-  <entry>
-    <title>html</title>
-    <url>/2022/02/22/html/</url>
-    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
-</li>
-<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -198,33 +200,11 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2022/02/10/test/</url>
-    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
-<span id="more"></span>
-
-<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
-
-<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机网络</title>
     <url>/2022/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
     <content><![CDATA[<p>【<a href="https://www.yinkuiwang.cn/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95/">推荐博客</a> <a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">推荐博客2</a>】</p>
-<h1 id="第一章-计算机网络和因特网"><a href="#第一章-计算机网络和因特网" class="headerlink" title="第一章 计算机网络和因特网"></a>第一章 计算机网络和因特网</h1><h2 id="1-1-什么是因特网"><a href="#1-1-什么是因特网" class="headerlink" title="1.1 什么是因特网"></a>1.1 什么是因特网</h2><p>​    因特网（Internet）是一组全球信息资源的总汇。有一种粗略的说法，认为INTERNET是由于许多小的网络（<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>）互联而成的一个逻辑网，每个<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>中连接着若干台计算机（<a href="https://baike.baidu.com/item/%E4%B8%BB%E6%9C%BA/455151">主机</a>）。Internet以相互交流信息资源为目的，基于一些共同的协议，并通过许多<a href="https://baike.baidu.com/item/%E8%B7%AF%E7%94%B1%E5%99%A8/108294">路由器</a>和公共互联网而成，它是一个信息资源和资源共享的集合。【<a href="https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91/114119">百度百科</a>】</p>
-<h3 id="1-1-1-具体构成描述"><a href="#1-1-1-具体构成描述" class="headerlink" title="1.1.1 具体构成描述"></a>1.1.1 具体构成描述</h3><img src="https://s2.ax1x.com/2019/12/13/QgUHg0.png" />
+<h1 id="第一章-计算机网络和因特网"><a href="#第一章-计算机网络和因特网" class="headerlink" title="第一章 计算机网络和因特网"></a>第一章 计算机网络和因特网</h1><h2 id="什么是因特网"><a href="#什么是因特网" class="headerlink" title="什么是因特网"></a>什么是因特网</h2><p>​    因特网（Internet）是一组全球信息资源的总汇。有一种粗略的说法，认为INTERNET是由于许多小的网络（<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>）互联而成的一个逻辑网，每个<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>中连接着若干台计算机（<a href="https://baike.baidu.com/item/%E4%B8%BB%E6%9C%BA/455151">主机</a>）。Internet以相互交流信息资源为目的，基于一些共同的协议，并通过许多<a href="https://baike.baidu.com/item/%E8%B7%AF%E7%94%B1%E5%99%A8/108294">路由器</a>和公共互联网而成，它是一个信息资源和资源共享的集合。【<a href="https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91/114119">百度百科</a>】</p>
+<h3 id="具体构成描述"><a href="#具体构成描述" class="headerlink" title="具体构成描述"></a>具体构成描述</h3><img src="https://s2.ax1x.com/2019/12/13/QgUHg0.png" />
 
 <ul>
 <li><p>因特网是一个世界范围的计算机网络，即它是一个互联了遍及全世界数十亿计算设备 的网络。</p>
@@ -252,7 +232,7 @@
 <li><p>内联网：专用网络，这些网络内的主机不能与专用网络外部的主机交换信息（除非这些信息通过了所谓的防火墙，否则防火墙一般会限制报文进入和流出网络）。</p>
 </li>
 </ul>
-<h3 id="1-1-2-服务描述"><a href="#1-1-2-服务描述" class="headerlink" title="1.1.2 服务描述"></a>1.1.2 服务描述</h3><ul>
+<h3 id="服务描述"><a href="#服务描述" class="headerlink" title="服务描述"></a>服务描述</h3><ul>
 <li><p>分布式应用程序(distributed applicalion)：涉及多个相互交换数据的端系统（如：多人多端游戏，多人实时聊天软件，视屏会议，基于位置推荐系统）。</p>
 </li>
 <li><p>与因特网相连的端系统提供了一个套接字接口(socket interface),该接口规定了运行 在一个端系统上的程序请求因特网基础设施向运行在另一个端系统上的特定目的地程序交 付数据的方式。</p>
@@ -260,20 +240,213 @@
 <li><p>与因特网相连的端系统提供了一个应用编程接口（Application Programming Interface，API），API规定了运行在一个端系统上的软件请求因特网基础设施向另一个端系统上的特定目的地软件交付数据的方式。因特网是一种基础设施，新应用程序正在其上不断地被发明和设置。</p>
 </li>
 </ul>
-<h3 id="1-1-3什么是协议"><a href="#1-1-3什么是协议" class="headerlink" title="1.1.3什么是协议"></a>1.1.3什么是协议</h3><blockquote>
+<h3 id="什么是协议"><a href="#什么是协议" class="headerlink" title="什么是协议"></a>什么是协议</h3><blockquote>
 <p>计算机网络中另一个重要的时髦术语:协议(protocol)。</p>
 </blockquote>
 <ul>
 <li>用人类活动进行类比</li>
 </ul>
-<p><img src="https://i.loli.net/2020/03/22/RS7Lpk2YjGtCnKV.png"></p>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/QgUHg0.png"></p>
 <p>类似于人们在交谈中使用的说话方式（和不同类型的人交谈的时候交谈方式一般不同）。交谈方式不符合就不能进行友好的交谈👬。因特网的所有活动，凡是涉及两个或多个通信的远程实体都受协议限制。</p>
 <ul>
 <li>协议 (protocol) 定义了在两个或多个通信实体之间交换的报文的格式和顺序，以及报文发送和&#x2F;或接收一条报文或其他事件所采取的动作。</li>
 </ul>
+<h2 id="网络边缘"><a href="#网络边缘" class="headerlink" title="网络边缘"></a>网络边缘</h2><blockquote>
+<p>端系统：通常把与因特网相连的计算机和其他设备称为端系统。因为它们位于因特网的边缘，故而被称为端系统。</p>
+<p>端系统 &#x3D; 主机， 可以被划分为下面两种：</p>
+<ul>
+<li>客户：桌面计算机，移动计算机。</li>
+<li>服务器（server）：比如企业存储大型数据的大型<strong>数据中心</strong>（data centers）。</li>
+</ul>
+</blockquote>
+<h3 id="接入网"><a href="#接入网" class="headerlink" title="接入网"></a>接入网</h3><blockquote>
+<p>接入网是指：位于“网络边缘”的应用程序和端系统，通过<strong>物理链接</strong>连接到其<strong>边缘路由器（edge router）</strong>的网络</p>
+<p>边缘路由器是端系统到任何其他 远程端系统的路径上的第一台路由器。</p>
+</blockquote>
+<ul>
+<li><p>家庭接入：DSL、电缆、FTTH、拨号和卫星</p>
+<ul>
+<li>数字用户线（digital subscriber line，**<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%97%E7%94%A8%E6%88%B7%E7%BA%BF%E8%B7%AF">DSL</a><strong>）：利用</strong>电话线路**接入网络。</li>
+<li><strong>电缆因特网接入</strong>（cable Internet access）：利用<strong>有线电视网</strong>接入网络。结构上，通过粗的同轴电缆接入社区，再用细的同轴电缆接入每家每户。</li>
+<li><a href="https://zh.wikipedia.org/wiki/FTTH">FTTH</a>：是一种<a href="https://zh.wikipedia.org/wiki/%E5%85%89%E7%BA%96%E9%80%9A%E8%A8%8A">光纤通信</a>的传输方法。是直接把<a href="https://zh.wikipedia.org/wiki/%E5%85%89%E7%BA%96">光纤</a>接到<a href="https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7">用户</a>的家中（用户所需的地方）。</li>
+</ul>
+</li>
+<li><p>企业(和家庭)接入:以太网和WiFi</p>
+<ul>
+<li><strong>以太网</strong>：使用双绞铜线与一台以太网交换机相连，速率可达到100Mbps、1Gbps、10Gbps。</li>
+<li>数字用户线（digital subscriber line，**<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%97%E7%94%A8%E6%88%B7%E7%BA%BF%E8%B7%AF">DSL</a><strong>）：利用</strong>电话线路**接入网络。</li>
+</ul>
+</li>
+<li><p>广义无限接入：3G和LTE（Long-Term Evolution）</p>
+<blockquote>
+<p>Tips: LTE被评为最差首字母缩写词年度奖候选</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="物理媒介"><a href="#物理媒介" class="headerlink" title="物理媒介"></a>物理媒介</h3><ul>
+<li>导引型媒体（guided media）：信号在固体媒体中传输，比如光缆、双绞铜线和同轴电缆。</li>
+<li>非导引型媒体（unguided media）：电波在空气中传播，比如无线局域网或数字卫星频道。</li>
+</ul>
+<h2 id="网络核心"><a href="#网络核心" class="headerlink" title="网络核心"></a>网络核心</h2><blockquote>
+<p>由互联因特网端系统的 分组交换机和链路构成的网状网络。下图标亮部分即使网络核心。</p>
+<p>一共三种交换方式：分组交换、电路交换、报文交换（很少使用）</p>
+</blockquote>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/dAzBna3i9lZU2uN.png"></p>
+<h3 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h3><blockquote>
+<p>端系统之彼此交换信息（报文 message）。其中提供了协议所需要的任何东西。<strong>源</strong>将长报文划分为较小的数据块（分组）。在源和目的地之间每个分组都通过<strong>通信链路</strong>和<strong>分组交换机</strong>（<strong>路由器</strong>和<strong>链路层交换机</strong>）</p>
+</blockquote>
+<ol>
+<li><p>存储转发传输：</p>
+<p>分组交换机收到整个报文后才能输出</p>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/YZt3aBmjsS1dLIi.png"></p>
+</li>
+<li><p>排队时延和分组丢失：</p>
+<p>分组交换机有有一个<strong>输出缓存</strong>（output buffer），分组可能会在分组交换机上排队等待输出，造成排队时延。</p>
+<p>分组交换机的缓存空间是有限的，所以在过于拥堵时会产生分组丢失（丢包）。</p>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/iCtTZGq6BQuHzwa.png"></p>
+</li>
+<li><p>转发表和路由选择协议：</p>
+<ul>
+<li>路由：分组中包括IP地址。</li>
+<li>转发：路由器中将目的地址映射为输出链路。</li>
+</ul>
+</li>
+</ol>
+<h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><blockquote>
+<p>在电路交换网络中，在端系统间通信会话期间，预留了端系统间沿路径通信所需要的资源（缓存，链路传输速率）。</p>
+<p>在分组交换网络中，不预留所需要的资源，可能不得不等待（即排队）接入通信线路（可能造成丢包）。</p>
+</blockquote>
+<ul>
+<li><p>比喻：两家餐厅，一家需要顾客预订（电路交换），一家不需要顾客预订（分组交换）。</p>
+</li>
+<li><p>分组交换的性能优于电路交换可以满足更多的用户</p>
+</li>
+</ul>
+<h3 id="网络中的网络（网络结构）"><a href="#网络中的网络（网络结构）" class="headerlink" title="网络中的网络（网络结构）"></a>网络中的网络（网络结构）</h3><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/NugS6r92GDaCqeJ.png"></p>
+<ul>
+<li><strong>ISP</strong>（Internet Service Provider， 互联网服务供应商）:ISP分为许多层级（<strong>第一层ISP</strong>（tier-1 ISP）、<strong>区域ISP</strong>（regional ISP）、<strong>接入ISP</strong>（access ISP））。端系统通过接入ISP与因特网相连，全球的ISP通过各个层级相连，形成了互联网的互联。</li>
+<li>因特网交换点（Internet Exchange Point，<strong>IXP</strong>）：由第三方公司创建，IXP是一个汇合点，多个ISP在此处对等。</li>
+</ul>
+<h2 id="分组交换网中的时延、丢包和吞吐量（略）"><a href="#分组交换网中的时延、丢包和吞吐量（略）" class="headerlink" title="分组交换网中的时延、丢包和吞吐量（略）"></a>分组交换网中的时延、丢包和吞吐量（略）</h2><h2 id="协议（Protocol）层次及其服务模型"><a href="#协议（Protocol）层次及其服务模型" class="headerlink" title="协议（Protocol）层次及其服务模型"></a>协议（Protocol）层次及其服务模型</h2><ul>
+<li>协议的三大要素：<ol>
+<li>语法（Syntax）：每一段内容符合一定规则的格式，比如一个报文前8位是原地址，后八个是目的地址（只是举例，不要当真）之类。</li>
+<li>语义（Semantics）：每一段内容需要代表某种意义，比如原地址部分的二进制到底是指哪个地址。</li>
+<li>同步（Timing）：通信的过程，即每一段任务的执行顺序。</li>
+</ol>
+</li>
+</ul>
+<h3 id="分层的体系结构（协议分层）"><a href="#分层的体系结构（协议分层）" class="headerlink" title="分层的体系结构（协议分层）"></a>分层的体系结构（协议分层）</h3><p><strong>各层的所有协议被称为协议栈(protocol stack)。</strong></p>
+<blockquote>
+<p>因特网的协议栈由 5个层次组成:物理层、链路层、网络层、运输层和应用层（左侧）<br>以及7层ISO OSI参考模型（右侧）。OSI模型由国际标准化组织（ISO）制定，实际并没有应用，只有理论。<br><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/Q2bQvn.png"></p>
+</blockquote>
+<ul>
+<li>下层为上层提供服务。越下面的层，越靠近硬件；越上面的层，越靠近用户。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">层次</th>
+<th align="left">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">应用层（Application Layer）</td>
+<td align="left">支持网络应用，应用协议仅仅是网络应用的一个组成部分，运行在不同主机上的进程则使用应用层协议进行通信。</td>
+</tr>
+<tr>
+<td align="left">传输层（Transport Layer）</td>
+<td align="left">负责为信源和信宿提供应用程序进程间的数据传输服务，这一层上主要定义了两个传输协议，传输控制协议即TCP和用户数据报协议UDP。</td>
+</tr>
+<tr>
+<td align="left">网络层（Network Layer）</td>
+<td align="left">负责将数据报独立地从信源发送到信宿，主要解决路由选择、拥塞控制和网络互联等问题。</td>
+</tr>
+<tr>
+<td align="left">链路层（Link Layer）</td>
+<td align="left">负责将IP数据报封装成合适在物理网络上传输的帧格式并传输，或将从物理网络接收到的帧解封，取出IP数据报交给网络层。</td>
+</tr>
+<tr>
+<td align="left">物理层（Physical Layer）</td>
+<td align="left">负责将比特流在结点间传输，即负责物理传输。该层的协议既与链路有关也与传输介质有关。</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>应用层：<strong>将应用层报文（application-layer message）M传送给传输层。</strong>应用层是网络应用程序及它们的应用层协议存留的地方。因特网的应用层包括许多协议：HTTP(它提供了Web文档的请求和 传送)、SMTP (它提供了电子邮件报文的传 输)和FTP (它提供两个端系统之间的文件传 送)。应用层协议分别在多个端系统中，一个端系统中的应用程序使用协议与另一个端系统中的应用程序交换信息分组。位于应用层的信息分组称为<strong>报文（message）</strong>。</p>
+</li>
+<li><p>传输层：<strong>接收报文M，附上传输层首部信息Ht（包括差错检测位信息等），构成 传输层报文段（transport-layer segment），将其传递给网络层。</strong><del>接受应用层报文，并在运输层提供了在应用程序端点之间传送应用层报文的服务。因特网存在两个运输协议TCP和UDP。TCP向它的应用程序提供了面向连接的服务，这种服务包括了应用层报文向目的地的确保确保传递和流量控制。TCP将长报文换分为短报文，并提供阻塞控制机制，当网络阻塞时，源抑制其传输速率。UDP协议提供无连接服务，其不提供不必要的服务，不提供可靠性，没有流量控制，也没有拥塞控制。运输层分组称为<strong>报文段（segment）</strong>。</del></p>
+</li>
+<li><p>网络层：<strong>接收传输层报文段，附上网络层首部信息Hn（包括源和目的地址等），构成 网络层数据段（network-layer datagram），将其传递给网络层。</strong><del>因特网网络层包括著名的IP协议，该协议定义了数据中各个字段以及端系统和路由器如何作用于这些字段。所有网络层的因特网组件都必须运行IP协议。因特网的网络层也包含决定路由的选路协议。IP是将因特网连接在一起的粘合剂。</del></p>
+</li>
+<li><p>链路层：<strong>接收网络层数据段，附上链路层首部信息Hl，构成 链路层帧（link-layer frame），将其传递给物理层。</strong><del>为了将分组从一个节点移动到路径的下一个节点，网络层必须使用链路层服务。在每一个节点，网络层将数据报下传给链路层，链路层沿着路径将数据传输给下一个节点，在下一个节点，链路层将数据报上传给网络层。链路层提供的服务取决于应用于该链路的特定链路协议。主要有以太网、WIFI和点对点协议（PPP）。链路层分组称为帧（frame）。</del></p>
+</li>
+<li><p>物理层：<strong>负责比特流物理传输。</strong><del>链路层是将帧从一个网路元素移动到临近的网络元素。物理层任务是将该帧中的一个一个比特从一个节点移动到下一个节点。</del></p>
+</li>
+</ul>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><ul>
+<li>报文、报文段、数据报、帧<br><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/Q2LEtS.png"></li>
+</ul>
+<p>上图显示了一条物理路径：数据从发送端系统的协议向下，上下中间的链路层交换机和路由器的协议栈，进而向上到达接收端系统的协议栈。</p>
+<p>上图也说明了封装这一重要概念。在发送主机，应用层报文（M）被传送给运输层；运输层收取报文并附上附加信息（运输层首部Ht），该首部将被被接收的运输层使用。应用层报文和运输层首部信息共同构成了运输层报文段。运输层报文段因此封装了应用层报文。运输层则向网络层传递该报文段，网络层增加了如源和目的地端系统地址等网络首部信息形成网络层数据报。该数据报接下来被传递给链路层，链路层添加自己的链路首部信息并创建链路帧。于是，在每一层，分组具有两种类型的字段：首部字段和有效荷载字段，有效荷载字段来自于上一层。</p>
+<h2 id="面对攻击的网络"><a href="#面对攻击的网络" class="headerlink" title="面对攻击的网络"></a>面对攻击的网络</h2><blockquote>
+<p>“坏家伙”试图对我们的日常生活进行破坏，如损坏我们与因特网相连的计算机，侵犯我们的隐私以及使我们依赖的因特网服务无法运行。</p>
+</blockquote>
+<h3 id="坏家伙能够经因特网将恶意软件放入你的计算机"><a href="#坏家伙能够经因特网将恶意软件放入你的计算机" class="headerlink" title="坏家伙能够经因特网将恶意软件放入你的计算机"></a>坏家伙能够经因特网将恶意软件放入你的计算机</h3><ul>
+<li><p>至今为止的多数恶意软件是**自我复制(self-replicating)**的：一台感染，寻求进入其他主机，导致多台感染。</p>
+</li>
+<li><p>**病 毒 (virus)**： 是一种需要某种形式的用户交互来感染用户设备的恶意软件。如：包含恶意可执行代码的电子邮件附件，具有自我复制能力。</p>
+</li>
+<li><p><strong>蠕 虫（worm</strong>：是一种无须任何明显用户交互就能进入设备的恶意软件。如：能够通过能够被攻击者发送恶意软件的脆弱网络程序进入主机，同样的，被感染主机附近主机若运行相同网络程序会被该主机感染。</p>
+</li>
+</ul>
+<h3 id="坏家伙能够攻击服务器和网络基础设施"><a href="#坏家伙能够攻击服务器和网络基础设施" class="headerlink" title="坏家伙能够攻击服务器和网络基础设施"></a>坏家伙能够攻击服务器和网络基础设施</h3><ul>
+<li><p>另一种宽泛类型的安全性威胁称为拒绝服务攻击(Denial-of・Service ( DoS) attack) o 顾名思义，DoS攻击使得网络、主机或其他基础设施部分不能由合法用户使用。Web服务 器、电子邮件服务器、DNS服务器(在第2章中讨论)和机构网络都能够成为DoS攻击的目标。</p>
+</li>
+<li><p>大多数因特网DoS攻击属于下列三种类型之一:</p>
+<ul>
+<li>弱点攻击。这涉及向一台目标主机上运行的易受攻击的应用程序或操作系统发送 制作精细的报文。如果适当顺序的多个分组发送给一个易受攻击的应用程序或操 作系统，该服务器可能停止运行，或者更糟糕的是主机可能崩溃。</li>
+<li>带宽洪泛。攻击者向目标主机发送大量的分组，分组数量之多使得目标的接入链 路变得拥塞，使得合法的分组无法到达服务器。</li>
+<li>连接洪泛。攻击者在目标主机中创建大量的半开或全开TCP连接。该主机因这些伪造的连接而陷入困境，并停止接受合法的连接。</li>
+</ul>
+</li>
+</ul>
+<h3 id="坏家伙能够嗅探分组"><a href="#坏家伙能够嗅探分组" class="headerlink" title="坏家伙能够嗅探分组"></a>坏家伙能够嗅探分组</h3><ul>
+<li><p>在无线传输设备 的附近放置一台被动的接收机，该接收机就能得到传输的每个分组的副本!这些分组包含了各种敏感信息，包括口令、社会保险号、商业秘密和隐秘的个人信息。记录每个流经的分组副本的被动接收机被称为**分组嗅探器(packet sniffer)**。</p>
+</li>
+<li><p>嗅探器也可用于有线环境，如在有线广播中。嗅探器是被动接收设备，很难被发现，因此最后的防御手段是密码学方式。</p>
+</li>
+</ul>
+<h3 id="坏家伙能够伪装成你信任的人"><a href="#坏家伙能够伪装成你信任的人" class="headerlink" title="坏家伙能够伪装成你信任的人"></a>坏家伙能够伪装成你信任的人</h3><ul>
+<li><p>生成具有任意原地址、分组内容和目的地址的分组，然后将这个人工制作的分组传输到因特网中是十分容易的。将虚假源地址的分组注入因特网的能力被称为<strong>IP哄骗（IP spoofing）</strong>，这只是一个用户能够冒充另一个用户的多种形式之一。</p>
+</li>
+<li><p>为解决这个问题，需要采用端点鉴别（end-point authentication）机制，即确保报文源自我们认为应该来自的地方的机制。</p>
+</li>
+</ul>
+<blockquote>
+<p>我们应当记住:在相互信任的用户之间的通信是一种例外而不是规则。</p>
+</blockquote>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>计算机网络</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/02/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
   </entry>
 </search>
