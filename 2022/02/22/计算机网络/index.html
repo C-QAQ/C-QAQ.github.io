@@ -35,8 +35,10 @@
 <meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/NugS6r92GDaCqeJ.png">
 <meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/Q2bQvn.png">
 <meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/Q2LEtS.png">
+<meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220224204655.png">
+<meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/socket.png">
 <meta property="article:published_time" content="2022-02-22T04:41:51.000Z">
-<meta property="article:modified_time" content="2022-02-23T05:33:40.343Z">
+<meta property="article:modified_time" content="2022-02-24T13:25:34.101Z">
 <meta property="article:author" content="C___">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
@@ -245,7 +247,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-23 13:33:40" itemprop="dateModified" datetime="2022-02-23T13:33:40+08:00">2022-02-23</time>
+                <time title="修改时间：2022-02-24 21:25:34" itemprop="dateModified" datetime="2022-02-24T21:25:34+08:00">2022-02-24</time>
               </span>
 
           
@@ -275,14 +277,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>6.2k</span>
+              <span>7.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 min</span>
+              <span>7 min</span>
             </span>
 
         </div>
@@ -516,6 +518,78 @@
 <blockquote>
 <p>我们应当记住:在相互信任的用户之间的通信是一种例外而不是规则。</p>
 </blockquote>
+<h1 id="第二章应用层"><a href="#第二章应用层" class="headerlink" title="第二章应用层"></a>第二章应用层</h1><blockquote>
+<p>网络应用是计算机的网络存在的理由：英特网应用包括包括：包括Web冲浪、搜索和电子商务，即时讯息和对等(P2P)文件共享，IP电话(VoIP)、视频会议(如Skype、Facetime和Google Hangouts)，用户生成的视频(如YouTube)和点播电影(如Netflix)，多方在线游戏(如《第二人生》 (Second Life)和《魔兽世界》(World of Warcraft))，Facebook、Instagram. Twitter和微信。英特网在</p>
+</blockquote>
+<blockquote>
+<p>应用层是我们学习协议非常好的起点，它最为我们所熟悉。我们熟悉的很多应用就是建立在这些将要学习的协议基础上的。通过对应用层的学习，将有助于我们很好地感受到 协议的方方面面，将使我们了解到很多问题，这些问题在我们学习运输层、网络层及数据链路层协议时也同样会碰到。</p>
+</blockquote>
+<h2 id="应用层协议原理"><a href="#应用层协议原理" class="headerlink" title="应用层协议原理"></a>应用层协议原理</h2><ul>
+<li>可以在不同类型主机运行。</li>
+<li>可以在不同终端间相互通讯。</li>
+<li>在编写网络应用的过程中，不需要考虑网络核心设备（如路由器或链路层交换机），网络核心不会允许应用。</li>
+<li>端系统上的应用可以快速开发，而且易于传播。</li>
+</ul>
+<h3 id="网络应用程序体系结构"><a href="#网络应用程序体系结构" class="headerlink" title="网络应用程序体系结构"></a>网络应用程序体系结构</h3><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220224204655.png"></p>
+<h4 id="客户-服务器体系结构-client-server-architecture"><a href="#客户-服务器体系结构-client-server-architecture" class="headerlink" title="客户-服务器体系结构(client-server architecture)"></a>客户-服务器体系结构(client-server architecture)</h4><blockquote>
+<p>例如：HTTP、IMAP、FTP<br>具有客户-服务器体系结构的非常著名的应用程序包括Web、FTP、Telnet和电子邮件。</p>
+</blockquote>
+<ul>
+<li><p>服务器：</p>
+<ul>
+<li>永远在线</li>
+<li>IP地址恒定</li>
+<li>服务器往往在数据中心，通过多台服务器进行扩展。</li>
+</ul>
+</li>
+<li><p>客户机：</p>
+<ul>
+<li>可以和服务器进行通信</li>
+<li>可能间断性连接网络</li>
+<li>可能是动态的IP地址</li>
+<li>客户机不会直接通信</li>
+</ul>
+</li>
+</ul>
+<h4 id="P2P-体系结构（点对点体系结构）-P2P-architecture"><a href="#P2P-体系结构（点对点体系结构）-P2P-architecture" class="headerlink" title="P2P 体系结构（点对点体系结构）(P2P architecture)"></a>P2P 体系结构（点对点体系结构）(P2P architecture)</h4><ul>
+<li>没有一个一直在线的服务器</li>
+<li>任意端系统之间直接进行通信</li>
+<li>每个点（peer）向其他的点请求服务，同时作为回报也会提供相应的服务</li>
+</ul>
+<blockquote>
+<p>优点：自扩展性（self-scalability）：新的点都会提供服务容量和负荷。<br>缺点：每个点都是间断性连接，而且IP地址会改变。<br>例子：P2P的文件分享。</p>
+</blockquote>
+<h3 id="进程通信（Processes-Communicating）"><a href="#进程通信（Processes-Communicating）" class="headerlink" title="进程通信（Processes Communicating）"></a>进程通信（Processes Communicating）</h3><h4 id="客户机和服务器进程"><a href="#客户机和服务器进程" class="headerlink" title="客户机和服务器进程"></a>客户机和服务器进程</h4><p><strong>进程（Processe）</strong>：一台主机上运行的程序。</p>
+<ul>
+<li>在同一台主机上，两个进程通过进程间通信（inter-process communication）来进行通信。进程间通信由操作系统定义</li>
+<li>不同主机之间，进程通信同过报文交换</li>
+</ul>
+<p><strong>客户机进程（client process）</strong>：发起通信的进程。<br><strong>服务器进程（server process）</strong>：等待连接的进程。</p>
+<blockquote>
+<p>P2P应用也存在客户机进程和服务器进程。</p>
+</blockquote>
+<h4 id="进程与计算机网络之间的接口"><a href="#进程与计算机网络之间的接口" class="headerlink" title="进程与计算机网络之间的接口"></a>进程与计算机网络之间的接口</h4><p>进程通过一个称为套接字(sock-et) 的软件接口向网络发送报文和从网络接收报文。由于该套接字是建立网络应用程序的可编程接口，因此套接字也称为应用程序和网络之间的应用程序编程接口(Application Programming Interface, API) 。</p>
+<ul>
+<li>应用程序开发者可以控制套接字在应用层端的一切，但是对该套接字的运输层端几乎没有控制权。<blockquote>
+<p>应用程序开发者对于运输层的控制仅限于:</p>
+<ol>
+<li>选择运输层协议;</li>
+<li>也许能设定几个运输层参数，如最大缓存和最大报文段长度等。</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h4 id="进程寻址（Addressing-Processes）"><a href="#进程寻址（Addressing-Processes）" class="headerlink" title="进程寻址（Addressing Processes）"></a>进程寻址（Addressing Processes）</h4><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/socket.png"><br>如果两个主机之间的进程进行通信，发送端要知道接收端的:</p>
+<ol>
+<li>主机的地址(IP地址)。</li>
+<li>还需要知道在目的主机中指定接收进程的标识符(进程相应的端口号)。</li>
+</ol>
+<blockquote>
+<p>HTTP服务端口号80、邮件服务端口号25</p>
+</blockquote>
+<h3 id="可供应用程序使用的运输服务"><a href="#可供应用程序使用的运输服务" class="headerlink" title="可供应用程序使用的运输服务"></a>可供应用程序使用的运输服务</h3><blockquote>
+<p>在开发一个（网络）应用时，必须选择一种可用的运输层协议。<br>我们大体能够从四个方面对应用程序服务要求进行分类:可靠数据传输、吞吐量、定时和安全性。</p>
+</blockquote>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">
     </div>
 
@@ -611,7 +685,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91"><span class="nav-number">1.</span> <span class="nav-text">第一章 计算机网络和因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%A0%E7%89%B9%E7%BD%91"><span class="nav-number">1.1.</span> <span class="nav-text">什么是因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%9E%84%E6%88%90%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.1.</span> <span class="nav-text">具体构成描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.2.</span> <span class="nav-text">服务描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E8%AE%AE"><span class="nav-number">1.1.3.</span> <span class="nav-text">什么是协议</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98"><span class="nav-number">1.2.</span> <span class="nav-text">网络边缘</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91"><span class="nav-number">1.2.1.</span> <span class="nav-text">接入网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%AA%92%E4%BB%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">物理媒介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83"><span class="nav-number">1.3.</span> <span class="nav-text">网络核心</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="nav-number">1.3.1.</span> <span class="nav-text">分组交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2"><span class="nav-number">1.3.2.</span> <span class="nav-text">电路交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E7%BD%91%E7%BB%9C%EF%BC%88%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%EF%BC%89"><span class="nav-number">1.3.3.</span> <span class="nav-text">网络中的网络（网络结构）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F%EF%BC%88%E7%95%A5%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">分组交换网中的时延、丢包和吞吐量（略）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%8F%E8%AE%AE%EF%BC%88Protocol%EF%BC%89%E5%B1%82%E6%AC%A1%E5%8F%8A%E5%85%B6%E6%9C%8D%E5%8A%A1%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.5.</span> <span class="nav-text">协议（Protocol）层次及其服务模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B1%82%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E5%8D%8F%E8%AE%AE%E5%88%86%E5%B1%82%EF%BC%89"><span class="nav-number">1.5.1.</span> <span class="nav-text">分层的体系结构（协议分层）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%81%E8%A3%85"><span class="nav-number">1.5.2.</span> <span class="nav-text">封装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%AF%B9%E6%94%BB%E5%87%BB%E7%9A%84%E7%BD%91%E7%BB%9C"><span class="nav-number">1.6.</span> <span class="nav-text">面对攻击的网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E7%BB%8F%E5%9B%A0%E7%89%B9%E7%BD%91%E5%B0%86%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E6%94%BE%E5%85%A5%E4%BD%A0%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA"><span class="nav-number">1.6.1.</span> <span class="nav-text">坏家伙能够经因特网将恶意软件放入你的计算机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E6%94%BB%E5%87%BB%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-number">1.6.2.</span> <span class="nav-text">坏家伙能够攻击服务器和网络基础设施</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E5%97%85%E6%8E%A2%E5%88%86%E7%BB%84"><span class="nav-number">1.6.3.</span> <span class="nav-text">坏家伙能够嗅探分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E4%BC%AA%E8%A3%85%E6%88%90%E4%BD%A0%E4%BF%A1%E4%BB%BB%E7%9A%84%E4%BA%BA"><span class="nav-number">1.6.4.</span> <span class="nav-text">坏家伙能够伪装成你信任的人</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91"><span class="nav-number">1.</span> <span class="nav-text">第一章 计算机网络和因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%A0%E7%89%B9%E7%BD%91"><span class="nav-number">1.1.</span> <span class="nav-text">什么是因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%9E%84%E6%88%90%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.1.</span> <span class="nav-text">具体构成描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.2.</span> <span class="nav-text">服务描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E8%AE%AE"><span class="nav-number">1.1.3.</span> <span class="nav-text">什么是协议</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98"><span class="nav-number">1.2.</span> <span class="nav-text">网络边缘</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91"><span class="nav-number">1.2.1.</span> <span class="nav-text">接入网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%AA%92%E4%BB%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">物理媒介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83"><span class="nav-number">1.3.</span> <span class="nav-text">网络核心</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="nav-number">1.3.1.</span> <span class="nav-text">分组交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2"><span class="nav-number">1.3.2.</span> <span class="nav-text">电路交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E7%BD%91%E7%BB%9C%EF%BC%88%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%EF%BC%89"><span class="nav-number">1.3.3.</span> <span class="nav-text">网络中的网络（网络结构）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E7%BD%91%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E3%80%81%E4%B8%A2%E5%8C%85%E5%92%8C%E5%90%9E%E5%90%90%E9%87%8F%EF%BC%88%E7%95%A5%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">分组交换网中的时延、丢包和吞吐量（略）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%8F%E8%AE%AE%EF%BC%88Protocol%EF%BC%89%E5%B1%82%E6%AC%A1%E5%8F%8A%E5%85%B6%E6%9C%8D%E5%8A%A1%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.5.</span> <span class="nav-text">协议（Protocol）层次及其服务模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B1%82%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E5%8D%8F%E8%AE%AE%E5%88%86%E5%B1%82%EF%BC%89"><span class="nav-number">1.5.1.</span> <span class="nav-text">分层的体系结构（协议分层）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%81%E8%A3%85"><span class="nav-number">1.5.2.</span> <span class="nav-text">封装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%AF%B9%E6%94%BB%E5%87%BB%E7%9A%84%E7%BD%91%E7%BB%9C"><span class="nav-number">1.6.</span> <span class="nav-text">面对攻击的网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E7%BB%8F%E5%9B%A0%E7%89%B9%E7%BD%91%E5%B0%86%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E6%94%BE%E5%85%A5%E4%BD%A0%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA"><span class="nav-number">1.6.1.</span> <span class="nav-text">坏家伙能够经因特网将恶意软件放入你的计算机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E6%94%BB%E5%87%BB%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-number">1.6.2.</span> <span class="nav-text">坏家伙能够攻击服务器和网络基础设施</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E5%97%85%E6%8E%A2%E5%88%86%E7%BB%84"><span class="nav-number">1.6.3.</span> <span class="nav-text">坏家伙能够嗅探分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%8F%E5%AE%B6%E4%BC%99%E8%83%BD%E5%A4%9F%E4%BC%AA%E8%A3%85%E6%88%90%E4%BD%A0%E4%BF%A1%E4%BB%BB%E7%9A%84%E4%BA%BA"><span class="nav-number">1.6.4.</span> <span class="nav-text">坏家伙能够伪装成你信任的人</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E5%BA%94%E7%94%A8%E5%B1%82"><span class="nav-number">2.</span> <span class="nav-text">第二章应用层</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">应用层协议原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="nav-number">2.1.1.</span> <span class="nav-text">网络应用程序体系结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%A2%E6%88%B7-%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-client-server-architecture"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">客户-服务器体系结构(client-server architecture)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#P2P-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E7%82%B9%E5%AF%B9%E7%82%B9%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%89-P2P-architecture"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">P2P 体系结构（点对点体系结构）(P2P architecture)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%EF%BC%88Processes-Communicating%EF%BC%89"><span class="nav-number">2.1.2.</span> <span class="nav-text">进程通信（Processes Communicating）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%A2%E6%88%B7%E6%9C%BA%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E7%A8%8B"><span class="nav-number">2.1.2.1.</span> <span class="nav-text">客户机和服务器进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B9%8B%E9%97%B4%E7%9A%84%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.1.2.2.</span> <span class="nav-text">进程与计算机网络之间的接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%AF%BB%E5%9D%80%EF%BC%88Addressing-Processes%EF%BC%89"><span class="nav-number">2.1.2.3.</span> <span class="nav-text">进程寻址（Addressing Processes）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E4%BE%9B%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E7%9A%84%E8%BF%90%E8%BE%93%E6%9C%8D%E5%8A%A1"><span class="nav-number">2.1.3.</span> <span class="nav-text">可供应用程序使用的运输服务</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -695,13 +769,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">12k</span>
+    <span title="站点总字数">13k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">11 min</span>
+    <span title="站点阅读时长">12 min</span>
 </div>
 
         
