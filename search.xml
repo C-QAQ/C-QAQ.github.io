@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Django</title>
-    <url>/2022/02/21/django/</url>
-    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
-<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
-<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
-<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
-<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
-</ol>
-<span id="more"></span>
-
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Django</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Algorithm Problem Solving</title>
     <url>/2022/02/20/Algorithm-Problem-Solving/</url>
     <content><![CDATA[<p><strong>简介</strong></p>
@@ -58,6 +42,8 @@
     <url>/2022/02/22/html/</url>
     <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<span id="more"></span>
+
 <ul>
 <li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
 </li>
@@ -70,25 +56,19 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2022/02/10/test/</url>
-    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
 <span id="more"></span>
 
-<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
-
-<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
-        <tag>test</tag>
+        <tag>Django</tag>
       </tags>
   </entry>
   <entry>
@@ -218,6 +198,28 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2022/02/10/test/</url>
+    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
+<span id="more"></span>
+
+<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
+
+<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
   </entry>
   <entry>
     <title>计算机网络</title>
@@ -397,13 +399,13 @@
 </tr>
 </tbody></table>
 <ul>
-<li><p>应用层：<strong>将应用层报文（application-layer message）M传送给传输层。</strong>应用层是网络应用程序及它们的应用层协议存留的地方。因特网的应用层包括许多协议：HTTP(它提供了Web文档的请求和 传送)、SMTP (它提供了电子邮件报文的传 输)和FTP (它提供两个端系统之间的文件传 送)。应用层协议分别在多个端系统中，一个端系统中的应用程序使用协议与另一个端系统中的应用程序交换信息分组。位于应用层的信息分组称为<strong>报文（message）</strong>。</p>
+<li><p>应用层：<strong>将应用层报文（application-layer message）M传送给传输层。</strong>应用层是网络应用程序及它们的应用层协议存留的地方。因特网的应用层包括许多协议：HTTP(它提供了Web文档的请求和传送)、SMTP (它提供了电子邮件报文的传输)和FTP (它提供两个端系统之间的文件传 送)。应用层协议分别在多个端系统中，一个端系统中的应用程序使用协议与另一个端系统中的应用程序交换信息分组。位于应用层的信息分组称为<strong>报文（message）</strong>。</p>
 </li>
-<li><p>传输层：<strong>接收报文M，附上传输层首部信息Ht（包括差错检测位信息等），构成 传输层报文段（transport-layer segment），将其传递给网络层。</strong><del>接受应用层报文，并在运输层提供了在应用程序端点之间传送应用层报文的服务。因特网存在两个运输协议TCP和UDP。TCP向它的应用程序提供了面向连接的服务，这种服务包括了应用层报文向目的地的确保确保传递和流量控制。TCP将长报文换分为短报文，并提供阻塞控制机制，当网络阻塞时，源抑制其传输速率。UDP协议提供无连接服务，其不提供不必要的服务，不提供可靠性，没有流量控制，也没有拥塞控制。运输层分组称为<strong>报文段（segment）</strong>。</del></p>
+<li><p>传输层：<strong>接收报文M，附上传输层首部信息Ht（包括差错检测位信息等），构成传输层报文段（transport-layer segment），将其传递给网络层。</strong><del>接受应用层报文，并在运输层提供了在应用程序端点之间传送应用层报文的服务。因特网存在两个运输协议TCP和UDP。TCP向它的应用程序提供了面向连接的服务，这种服务包括了应用层报文向目的地的确保确保传递和流量控制。TCP将长报文换分为短报文，并提供阻塞控制机制，当网络阻塞时，源抑制其传输速率。UDP协议提供无连接服务，其不提供不必要的服务，不提供可靠性，没有流量控制，也没有拥塞控制。运输层分组称为<strong>报文段（segment）</strong>。</del></p>
 </li>
-<li><p>网络层：<strong>接收传输层报文段，附上网络层首部信息Hn（包括源和目的地址等），构成 网络层数据段（network-layer datagram），将其传递给网络层。</strong><del>因特网网络层包括著名的IP协议，该协议定义了数据中各个字段以及端系统和路由器如何作用于这些字段。所有网络层的因特网组件都必须运行IP协议。因特网的网络层也包含决定路由的选路协议。IP是将因特网连接在一起的粘合剂。</del></p>
+<li><p>网络层：<strong>接收传输层报文段，附上网络层首部信息Hn（包括源和目的地址等），构成网络层数据段（network-layer datagram），将其传递给网络层。</strong><del>因特网网络层包括著名的IP协议，该协议定义了数据中各个字段以及端系统和路由器如何作用于这些字段。所有网络层的因特网组件都必须运行IP协议。因特网的网络层也包含决定路由的选路协议。IP是将因特网连接在一起的粘合剂。</del></p>
 </li>
-<li><p>链路层：<strong>接收网络层数据段，附上链路层首部信息Hl，构成 链路层帧（link-layer frame），将其传递给物理层。</strong><del>为了将分组从一个节点移动到路径的下一个节点，网络层必须使用链路层服务。在每一个节点，网络层将数据报下传给链路层，链路层沿着路径将数据传输给下一个节点，在下一个节点，链路层将数据报上传给网络层。链路层提供的服务取决于应用于该链路的特定链路协议。主要有以太网、WIFI和点对点协议（PPP）。链路层分组称为帧（frame）。</del></p>
+<li><p>链路层：<strong>接收网络层数据段，附上链路层首部信息Hl，构成链路层帧（link-layer frame），将其传递给物理层。</strong><del>为了将分组从一个节点移动到路径的下一个节点，网络层必须使用链路层服务。在每一个节点，网络层将数据报下传给链路层，链路层沿着路径将数据传输给下一个节点，在下一个节点，链路层将数据报上传给网络层。链路层提供的服务取决于应用于该链路的特定链路协议。主要有以太网、WIFI和点对点协议（PPP）。链路层分组称为帧（frame）。</del></p>
 </li>
 <li><p>物理层：<strong>负责比特流物理传输。</strong><del>链路层是将帧从一个网路元素移动到临近的网络元素。物理层任务是将该帧中的一个一个比特从一个节点移动到下一个节点。</del></p>
 </li>

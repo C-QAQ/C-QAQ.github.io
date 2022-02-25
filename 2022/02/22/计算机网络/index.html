@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/UDPsocket.png">
 <meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/%E5%A5%97%E6%8E%A5%E5%AD%97.png">
 <meta property="article:published_time" content="2022-02-22T04:41:51.000Z">
-<meta property="article:modified_time" content="2022-02-25T14:53:32.390Z">
+<meta property="article:modified_time" content="2022-02-25T15:17:16.375Z">
 <meta property="article:author" content="C___">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
@@ -250,7 +250,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-25 22:53:32" itemprop="dateModified" datetime="2022-02-25T22:53:32+08:00">2022-02-25</time>
+                <time title="修改时间：2022-02-25 23:17:16" itemprop="dateModified" datetime="2022-02-25T23:17:16+08:00">2022-02-25</time>
               </span>
 
           
@@ -474,13 +474,13 @@
 </tr>
 </tbody></table>
 <ul>
-<li><p>应用层：<strong>将应用层报文（application-layer message）M传送给传输层。</strong>应用层是网络应用程序及它们的应用层协议存留的地方。因特网的应用层包括许多协议：HTTP(它提供了Web文档的请求和 传送)、SMTP (它提供了电子邮件报文的传 输)和FTP (它提供两个端系统之间的文件传 送)。应用层协议分别在多个端系统中，一个端系统中的应用程序使用协议与另一个端系统中的应用程序交换信息分组。位于应用层的信息分组称为<strong>报文（message）</strong>。</p>
+<li><p>应用层：<strong>将应用层报文（application-layer message）M传送给传输层。</strong>应用层是网络应用程序及它们的应用层协议存留的地方。因特网的应用层包括许多协议：HTTP(它提供了Web文档的请求和传送)、SMTP (它提供了电子邮件报文的传输)和FTP (它提供两个端系统之间的文件传 送)。应用层协议分别在多个端系统中，一个端系统中的应用程序使用协议与另一个端系统中的应用程序交换信息分组。位于应用层的信息分组称为<strong>报文（message）</strong>。</p>
 </li>
-<li><p>传输层：<strong>接收报文M，附上传输层首部信息Ht（包括差错检测位信息等），构成 传输层报文段（transport-layer segment），将其传递给网络层。</strong><del>接受应用层报文，并在运输层提供了在应用程序端点之间传送应用层报文的服务。因特网存在两个运输协议TCP和UDP。TCP向它的应用程序提供了面向连接的服务，这种服务包括了应用层报文向目的地的确保确保传递和流量控制。TCP将长报文换分为短报文，并提供阻塞控制机制，当网络阻塞时，源抑制其传输速率。UDP协议提供无连接服务，其不提供不必要的服务，不提供可靠性，没有流量控制，也没有拥塞控制。运输层分组称为<strong>报文段（segment）</strong>。</del></p>
+<li><p>传输层：<strong>接收报文M，附上传输层首部信息Ht（包括差错检测位信息等），构成传输层报文段（transport-layer segment），将其传递给网络层。</strong><del>接受应用层报文，并在运输层提供了在应用程序端点之间传送应用层报文的服务。因特网存在两个运输协议TCP和UDP。TCP向它的应用程序提供了面向连接的服务，这种服务包括了应用层报文向目的地的确保确保传递和流量控制。TCP将长报文换分为短报文，并提供阻塞控制机制，当网络阻塞时，源抑制其传输速率。UDP协议提供无连接服务，其不提供不必要的服务，不提供可靠性，没有流量控制，也没有拥塞控制。运输层分组称为<strong>报文段（segment）</strong>。</del></p>
 </li>
-<li><p>网络层：<strong>接收传输层报文段，附上网络层首部信息Hn（包括源和目的地址等），构成 网络层数据段（network-layer datagram），将其传递给网络层。</strong><del>因特网网络层包括著名的IP协议，该协议定义了数据中各个字段以及端系统和路由器如何作用于这些字段。所有网络层的因特网组件都必须运行IP协议。因特网的网络层也包含决定路由的选路协议。IP是将因特网连接在一起的粘合剂。</del></p>
+<li><p>网络层：<strong>接收传输层报文段，附上网络层首部信息Hn（包括源和目的地址等），构成网络层数据段（network-layer datagram），将其传递给网络层。</strong><del>因特网网络层包括著名的IP协议，该协议定义了数据中各个字段以及端系统和路由器如何作用于这些字段。所有网络层的因特网组件都必须运行IP协议。因特网的网络层也包含决定路由的选路协议。IP是将因特网连接在一起的粘合剂。</del></p>
 </li>
-<li><p>链路层：<strong>接收网络层数据段，附上链路层首部信息Hl，构成 链路层帧（link-layer frame），将其传递给物理层。</strong><del>为了将分组从一个节点移动到路径的下一个节点，网络层必须使用链路层服务。在每一个节点，网络层将数据报下传给链路层，链路层沿着路径将数据传输给下一个节点，在下一个节点，链路层将数据报上传给网络层。链路层提供的服务取决于应用于该链路的特定链路协议。主要有以太网、WIFI和点对点协议（PPP）。链路层分组称为帧（frame）。</del></p>
+<li><p>链路层：<strong>接收网络层数据段，附上链路层首部信息Hl，构成链路层帧（link-layer frame），将其传递给物理层。</strong><del>为了将分组从一个节点移动到路径的下一个节点，网络层必须使用链路层服务。在每一个节点，网络层将数据报下传给链路层，链路层沿着路径将数据传输给下一个节点，在下一个节点，链路层将数据报上传给网络层。链路层提供的服务取决于应用于该链路的特定链路协议。主要有以太网、WIFI和点对点协议（PPP）。链路层分组称为帧（frame）。</del></p>
 </li>
 <li><p>物理层：<strong>负责比特流物理传输。</strong><del>链路层是将帧从一个网路元素移动到临近的网络元素。物理层任务是将该帧中的一个一个比特从一个节点移动到下一个节点。</del></p>
 </li>
