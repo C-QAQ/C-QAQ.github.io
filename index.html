@@ -325,7 +325,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-25 16:17:38" itemprop="dateModified" datetime="2022-02-25T16:17:38+08:00">2022-02-25</time>
+                <time title="修改时间：2022-02-25 16:58:16" itemprop="dateModified" datetime="2022-02-25T16:58:16+08:00">2022-02-25</time>
               </span>
 
           
@@ -348,14 +348,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>9.1k</span>
+              <span>10k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 min</span>
+              <span>9 min</span>
             </span>
 
         </div>
@@ -800,6 +800,201 @@
 <ul>
 <li>定义应用层协议:报文格式，解释，时序等</li>
 <li>编制程序，通过API调用网络基础设施提供通信服务传报文，解析报文，实现应用时序等</li>
+</ul>
+<h3 id="应用层协议"><a href="#应用层协议" class="headerlink" title="应用层协议"></a>应用层协议</h3><ul>
+<li>定义了:运行在不同端系统上的应用进程如何相互交换报文<ul>
+<li>交换的报文类型:请求和应答报文</li>
+<li>各种报文类型的<strong>语法</strong>:报文中的各个字段及其描述</li>
+<li>字段的<strong>语义</strong>:即字段取值的含义</li>
+<li>进程何时、如何发送报文及对报文进行响应的<strong>规则</strong></li>
+</ul>
+</li>
+<li>应用协议仅仅是应用的一个组成部分<ul>
+<li>Web应用:HTTP协议，web客 户端，web服务器，HTML</li>
+</ul>
+</li>
+<li>公开协议<ul>
+<li>由RFC文档定义</li>
+<li>允许互操作</li>
+<li>如HTTP, SMTP</li>
+</ul>
+</li>
+<li>专用(私有)协议:<ul>
+<li>协议不公开</li>
+<li>如:Skype</li>
+</ul>
+</li>
+</ul>
+<h3 id="应用需要传输层提供什么样的服务-如何描述传输层的服务"><a href="#应用需要传输层提供什么样的服务-如何描述传输层的服务" class="headerlink" title="应用需要传输层提供什么样的服务?如何描述传输层的服务?"></a>应用需要传输层提供什么样的服务?如何描述传输层的服务?</h3><ul>
+<li>数据丢失率<ul>
+<li>一些应用(如多媒体)必须 需要最小限度的吞吐，从而 使得应用能够有效运转</li>
+<li>一些应用能充分利用可供使 用的吞吐(弹性应用)</li>
+</ul>
+</li>
+<li>吞吐<ul>
+<li>有些应用则要求100%的可 靠数据传输(如文件)</li>
+<li>有些应用(如音频)能容忍 一定比例以下的数据丢失</li>
+</ul>
+</li>
+<li>延迟<ul>
+<li>一些应用出于有效性考虑，对数据传输有严格的时间限制</li>
+<li>Internet 电话、交互式游戏</li>
+<li>延迟、延迟差</li>
+</ul>
+</li>
+<li>安全性<ul>
+<li>机密性</li>
+<li>完整性</li>
+<li>可认证性(鉴别)</li>
+</ul>
+</li>
+</ul>
+<p><strong>常见应用对传输服务的要求：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">应用</th>
+<th align="left">数据丢失率</th>
+<th align="left">吞吐</th>
+<th align="left">时间敏感性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">文件传输</td>
+<td align="left">不能丢失</td>
+<td align="left">弹性</td>
+<td align="left">不</td>
+</tr>
+<tr>
+<td align="center">e-mail</td>
+<td align="left">不能丢失</td>
+<td align="left">弹性</td>
+<td align="left">不</td>
+</tr>
+<tr>
+<td align="center">Web 文档</td>
+<td align="left">不能丢失</td>
+<td align="left">弹性</td>
+<td align="left">不</td>
+</tr>
+<tr>
+<td align="center">实时音视频</td>
+<td align="left">容忍丢失</td>
+<td align="left">音频：5kbps-1Mkbps &#x2F; 视频：0kbps-5Mkbps</td>
+<td align="left">是，100ms</td>
+</tr>
+<tr>
+<td align="center">存储音视频</td>
+<td align="left">容忍丢失</td>
+<td align="left">同上</td>
+<td align="left">是，几秒</td>
+</tr>
+<tr>
+<td align="center">交互式游戏</td>
+<td align="left">容忍丢失</td>
+<td align="left">几kbps-10kbps</td>
+<td align="left">是，100ms</td>
+</tr>
+<tr>
+<td align="center">即时讯息</td>
+<td align="left">不能丢失</td>
+<td align="left">弹性</td>
+<td align="left">是和不是</td>
+</tr>
+</tbody></table>
+<h3 id="Internet-传输层提供的服务"><a href="#Internet-传输层提供的服务" class="headerlink" title="Internet 传输层提供的服务"></a>Internet 传输层提供的服务</h3><ul>
+<li>TCP 服务:<ul>
+<li>可靠的传输服务</li>
+<li>流量控制:发送方不会淹没接受方</li>
+<li>拥塞控制:当网络出现拥塞时，能抑制发送方</li>
+<li>不能提供的服务:时间保证、最小吞吐保证和安全</li>
+<li>面向连接:要求在客户端进程和服务器进程之间建立连接</li>
+</ul>
+</li>
+<li>UDP 服务:<ul>
+<li>不可靠数据传输</li>
+<li>不提供的服务:可靠，流量控制、拥塞控制、时间、带宽保证、建立连接</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>UDP存在的必要性</p>
+<ul>
+<li>能够区分不同的进程，而IP服务不能<ul>
+<li>在IP提供的主机到主机端到端功能的基础上，区分了主机的应用进程</li>
+</ul>
+</li>
+<li>无需建立连接，省去了建立连接时间，适合事务性的应用</li>
+<li>不做可靠性的工作，例如检错重发，适合那些对实时性要求比较高而对正确性要求不高的应用<ul>
+<li>因为为了实现可靠性(准确性、保序等)，必须付出时间代价(检错重发)</li>
+</ul>
+</li>
+<li>没有拥塞控制和流量控制，应用能够按照设定的速度发送数据<ul>
+<li>而在TCP上面的应用，应用发送数据的速度和主机向网络发送的实际速度是不一致的，因为有流量控制和拥塞控制</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="Internet应用及其应用层协议和传输协议"><a href="#Internet应用及其应用层协议和传输协议" class="headerlink" title="Internet应用及其应用层协议和传输协议"></a>Internet应用及其应用层协议和传输协议</h3><table>
+<thead>
+<tr>
+<th align="center">应用</th>
+<th align="left">应用层协议</th>
+<th align="left">下层的传输协议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">e-mail</td>
+<td align="left">SMTP [RFC 2821]</td>
+<td align="left">TCP</td>
+</tr>
+<tr>
+<td align="center">远程终端访问</td>
+<td align="left">Telnet [RFC 854]</td>
+<td align="left">TCP</td>
+</tr>
+<tr>
+<td align="center">Web</td>
+<td align="left">HTTP [RFC 2616]</td>
+<td align="left">TCP</td>
+</tr>
+<tr>
+<td align="center">文件传输</td>
+<td align="left">FTP [RFC 959]</td>
+<td align="left">TCP</td>
+</tr>
+<tr>
+<td align="center">流媒体</td>
+<td align="left">专用协议 (如RealNetworks)</td>
+<td align="left">TCP或UDP</td>
+</tr>
+<tr>
+<td align="center">Internet电话</td>
+<td align="left">专用协议 (如Net2Phone)</td>
+<td align="left">TCP或UDP</td>
+</tr>
+</tbody></table>
+<h3 id="安全TCP"><a href="#安全TCP" class="headerlink" title="安全TCP"></a>安全TCP</h3><ul>
+<li>TCP &amp; UDP<ul>
+<li>都没有加密</li>
+<li>明文通过互联网传输，甚至密码</li>
+</ul>
+</li>
+<li>SSL<ul>
+<li>在TCP上面实现，提供加密的TCP连接</li>
+<li>私密性</li>
+<li>数据完整性</li>
+<li>端到端的鉴别</li>
+</ul>
+</li>
+<li>SSL在应用层<ul>
+<li>应用采用SSL库，SSL库使用TCP通信</li>
+</ul>
+</li>
+<li>SSL socket API<ul>
+<li>应用通过API将明文交给socket，SSL将其加密在互联网上传输</li>
+</ul>
+</li>
 </ul>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">
       
@@ -1451,13 +1646,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">16k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">13 min</span>
+    <span title="站点阅读时长">14 min</span>
 </div>
 
         
