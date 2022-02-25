@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
+<span id="more"></span>
+
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Django</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Algorithm Problem Solving</title>
     <url>/2022/02/20/Algorithm-Problem-Solving/</url>
     <content><![CDATA[<p><strong>简介</strong></p>
@@ -38,36 +54,24 @@
       </tags>
   </entry>
   <entry>
-    <title>html</title>
-    <url>/2022/02/22/html/</url>
-    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
-</li>
-<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Django</title>
-    <url>/2022/02/21/django/</url>
-    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
-<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
-<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
-<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
-<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
-</ol>
+    <title>Hello World</title>
+    <url>/2022/02/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <span id="more"></span>
 
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Django</tag>
-      </tags>
   </entry>
   <entry>
     <title>test</title>
@@ -92,30 +96,138 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/02/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
+    <title>html</title>
+    <url>/2022/02/22/html/</url>
+    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<ul>
+<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
+</li>
+<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
+</li>
+</ul>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux</title>
+    <url>/2022/02/21/linux/</url>
+    <content><![CDATA[<blockquote>
+<p>Linux 学习</p>
+</blockquote>
+<p>​    <span id="more"></span></p>
+<h1 id="服务器管理"><a href="#服务器管理" class="headerlink" title="服务器管理"></a>服务器管理</h1><ul>
+<li><code>.ssh/config</code>文件中配置服务器别名</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host name</span><br><span class="line">    HostName ip</span><br><span class="line">    User username</span><br><span class="line">    Port port_id</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>配置免密登录 <code>ubuntu:ssh-copy-id username@ip</code></li>
+<li></li>
+</ul>
+<h1 id="Linux-用户和用户组设置"><a href="#Linux-用户和用户组设置" class="headerlink" title="Linux 用户和用户组设置"></a>Linux 用户和用户组设置</h1><ul>
+<li>创建新用户<code>ubuntu:adduser username</code></li>
+<li>为用户分配<em>sudo</em>权限<code>ubuntu:usermod -aG sudo username</code></li>
+</ul>
+<h1 id="Linux-应用安装"><a href="#Linux-应用安装" class="headerlink" title="Linux 应用安装"></a>Linux 应用安装</h1><ul>
+<li>获取最近的软件包列表<code>ubuntu:sudo apt-get update</code></li>
+</ul>
+<h1 id="scp-使用"><a href="#scp-使用" class="headerlink" title="scp 使用"></a>scp 使用</h1><ul>
+<li>传输文件到其他服务器<code>ubuntu: scp filename username@ip:path</code></li>
+</ul>
+<h1 id="软件源配置"><a href="#软件源配置" class="headerlink" title="软件源配置"></a>软件源配置</h1><p>更改 <code>/etc/apt/sources.list</code>文件为所需软件源</p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">清华软件源</a></p>
+<h1 id="docker-注：转载至-AcWing-Linux"><a href="#docker-注：转载至-AcWing-Linux" class="headerlink" title="docker 注：转载至 AcWing.Linux"></a>docker <em>注：转载至 <a href="https://www.acwing.com/">AcWing.Linux</a></em></h1><ul>
+<li><p><strong>安装地址<a href="https://docs.docker.com/engine/install/ubuntu/">ubuntu</a></strong></p>
+</li>
+<li><p><strong>将当前用户添加到docker用户组</strong><br>为了避免每次使用docker命令都需要加上sudo权限，可以将当前用户加入安装中自动创建的docker用户组(可以参考官方文档)：</p>
+<p><code>sudo usermod -aG docker $USER</code></p>
+</li>
+<li><p><strong>镜像（images）</strong></p>
+<ol>
+<li>docker pull ubuntu:20.04：拉取一个镜像</li>
+<li>docker images：列出本地所有镜像</li>
+<li>docker image rm ubuntu:20.04 或 docker rmi ubuntu:20.04：删除镜像ubuntu:20.04</li>
+<li>docker [container] commit CONTAINER IMAGE_NAME:TAG：创建某个container的镜像</li>
+<li>docker save -o ubuntu_20_04.tar ubuntu:20.04：将镜像ubuntu:20.04导出到本地文件ubuntu_20_04.tar中</li>
+<li>docker load -i ubuntu_20_04.tar：将镜像ubuntu:20.04从本地文件ubuntu_20_04.tar中加载出来</li>
+</ol>
+</li>
+<li><p><strong>容器(container)</strong></p>
+<ol>
+<li><p>docker [container] create -it ubuntu:20.04：利用镜像ubuntu:20.04创建一个容器。</p>
+</li>
+<li><p>docker ps -a：查看本地的所有容器</p>
+</li>
+<li><p>docker [container] start CONTAINER：启动容器</p>
+</li>
+<li><p>docker [container] stop CONTAINER：停止容器</p>
+</li>
+<li><p>docker [container] restart CONTAINER：重启容器</p>
+</li>
+<li><p>docker [contaienr] run -itd ubuntu:20.04：创建并启动一个容器</p>
+</li>
+<li><p>docker [container] attach CONTAINER：进入容器</p>
+<ul>
+<li>先按Ctrl-p，再按Ctrl-q可以挂起容器</li>
+</ul>
+</li>
+<li><p>docker [container] exec CONTAINER COMMAND：在容器中执行命令</p>
+</li>
+<li><p>docker [container] rm CONTAINER：删除容器</p>
+</li>
+<li><p>docker container prune：删除所有已停止的容器</p>
+</li>
+<li><p>docker export -o xxx.tar CONTAINER：将容器CONTAINER导出到本地文件xxx.tar中</p>
+</li>
+<li><p>docker import xxx.tar image_name:tag：将本地文件xxx.tar导入成镜像，并将镜像命名为image_name:tag</p>
+</li>
+<li><p>docker export&#x2F;import与docker save&#x2F;load的区别：</p>
+<ul>
+<li><p>export&#x2F;import会丢弃历史记录和元数据信息，仅保存容器当时的快照状态</p>
+</li>
+<li><p>save&#x2F;load会保存完整记录，体积更大</p>
+</li>
+</ul>
+</li>
+<li><p>docker top CONTAINER：查看某个容器内的所有进程</p>
+</li>
+<li><p>docker stats：查看所有容器的统计信息，包括CPU、内存、存储、网络等信息</p>
+</li>
+<li><p>docker cp xxx CONTAINER:xxx 或 docker cp CONTAINER:xxx xxx：在本地和容器间复制文件</p>
+</li>
+<li><p>docker rename CONTAINER1 CONTAINER2：重命名容器</p>
+</li>
+<li><p>docker update CONTAINER –memory 500MB：修改容器限制</p>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><ul>
+<li>过滤某些文件的上传：<ol>
+<li>在Git根目录下创建<code>.gitignore    </code>文件</li>
+<li>将需要过滤的文件名按照列表的形式一行一个保存在<code>.gitignore</code>文件中<br><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220221180050.png" alt="实例"></li>
+</ol>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
   </entry>
   <entry>
     <title>计算机网络</title>
     <url>/2022/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
     <content><![CDATA[<p>（开头：1 —–<strong>目前：59</strong>—– 结尾478）</p>
-<p>【<a href="https://www.yinkuiwang.cn/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95/">推荐博客</a> <a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">推荐博客2</a>】</p>
+<p>【<a href="https://www.yinkuiwang.cn/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95/">推荐博客</a> <a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">推荐博客2</a>】<br>【<a href="https://mac-air.obs.cn-north-4.myhuaweicloud.com/%E8%AF%BE%E4%BB%B6/ustc-zheng-cn.zip">推荐课件</a>】</p>
+<ul>
+<li>推荐网络课程</li>
+<li><a href="https://mac-air.obs.cn-north-4.myhuaweicloud.com/%E8%AF%BE%E4%BB%B6/ustc-zheng-cn.zip">课件</a><iframe src="//player.bilibili.com/player.html?aid=416090103&bvid=BV1JV411t7ow&cid=279011301&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></li>
+</ul>
 <h1 id="第一章-计算机网络和因特网"><a href="#第一章-计算机网络和因特网" class="headerlink" title="第一章 计算机网络和因特网"></a>第一章 计算机网络和因特网</h1><h2 id="什么是因特网"><a href="#什么是因特网" class="headerlink" title="什么是因特网"></a>什么是因特网</h2><p>​    因特网（Internet）是一组全球信息资源的总汇。有一种粗略的说法，认为INTERNET是由于许多小的网络（<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>）互联而成的一个逻辑网，每个<a href="https://baike.baidu.com/item/%E5%AD%90%E7%BD%91/1186929">子网</a>中连接着若干台计算机（<a href="https://baike.baidu.com/item/%E4%B8%BB%E6%9C%BA/455151">主机</a>）。Internet以相互交流信息资源为目的，基于一些共同的协议，并通过许多<a href="https://baike.baidu.com/item/%E8%B7%AF%E7%94%B1%E5%99%A8/108294">路由器</a>和公共互联网而成，它是一个信息资源和资源共享的集合。【<a href="https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91/114119">百度百科</a>】</p>
 <h3 id="具体构成描述"><a href="#具体构成描述" class="headerlink" title="具体构成描述"></a>具体构成描述</h3><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/QgUHg0.png"></p>
 <ul>
@@ -348,8 +460,16 @@
 <li>在编写网络应用的过程中，不需要考虑网络核心设备（如路由器或链路层交换机），网络核心不会允许应用。</li>
 <li>端系统上的应用可以快速开发，而且易于传播。</li>
 </ul>
-<h3 id="网络应用程序体系结构"><a href="#网络应用程序体系结构" class="headerlink" title="网络应用程序体系结构"></a>网络应用程序体系结构</h3><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220224204655.png"></p>
-<h4 id="客户-服务器体系结构-client-server-architecture"><a href="#客户-服务器体系结构-client-server-architecture" class="headerlink" title="客户-服务器体系结构(client-server architecture)"></a>客户-服务器体系结构(client-server architecture)</h4><blockquote>
+<h3 id="网络应用程序体系结构"><a href="#网络应用程序体系结构" class="headerlink" title="网络应用程序体系结构"></a>网络应用程序体系结构</h3><blockquote>
+<p>可能的应用架构:</p>
+<ul>
+<li>客户-服务器模式(C&#x2F;S:client&#x2F;server) </li>
+<li>对等模式(P2P:Peer To Peer)</li>
+<li>混合体:客户-服务器和对等体系结构</li>
+</ul>
+</blockquote>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220224204655.png"></p>
+<h4 id="客户-服务器-C-x2F-S-体系结构"><a href="#客户-服务器-C-x2F-S-体系结构" class="headerlink" title="客户-服务器(C&#x2F;S)体系结构"></a>客户-服务器(C&#x2F;S)体系结构</h4><blockquote>
 <p>例如：HTTP、IMAP、FTP<br>具有客户-服务器体系结构的非常著名的应用程序包括Web、FTP、Telnet和电子邮件。</p>
 </blockquote>
 <ul>
@@ -362,163 +482,183 @@
 </li>
 <li><p>客户机：</p>
 <ul>
-<li>可以和服务器进行通信</li>
+<li>主动与服务器通信</li>
 <li>可能间断性连接网络</li>
 <li>可能是动态的IP地址</li>
-<li>客户机不会直接通信</li>
+<li>不直接与其它客户端通信</li>
 </ul>
 </li>
 </ul>
-<h4 id="P2P-体系结构（点对点体系结构）-P2P-architecture"><a href="#P2P-体系结构（点对点体系结构）-P2P-architecture" class="headerlink" title="P2P 体系结构（点对点体系结构）(P2P architecture)"></a>P2P 体系结构（点对点体系结构）(P2P architecture)</h4><ul>
-<li>没有一个一直在线的服务器</li>
+<h4 id="对等体-P2P-体系结构"><a href="#对等体-P2P-体系结构" class="headerlink" title="对等体(P2P)体系结构"></a>对等体(P2P)体系结构</h4><ul>
+<li>（几乎）没有一个一直在线的服务器</li>
 <li>任意端系统之间直接进行通信</li>
-<li>每个点（peer）向其他的点请求服务，同时作为回报也会提供相应的服务</li>
+<li>每一个节点既是客户端又是服务器</li>
 </ul>
 <blockquote>
-<p>优点：自扩展性（self-scalability）：新的点都会提供服务容量和负荷。<br>缺点：每个点都是间断性连接，而且IP地址会改变。<br>例子：P2P的文件分享。</p>
+<p>优点：自扩展性（self-scalability）：自扩展性-新peer节点带来新的服务能力，当然也带来新的服务请求<br>缺点：参与的主机间歇性连接且可以改变IP地址（难以管理）。<br>例子：P2P的文件分享（Gnutella，迅雷）。</p>
 </blockquote>
-<h3 id="进程通信（Processes-Communicating）"><a href="#进程通信（Processes-Communicating）" class="headerlink" title="进程通信（Processes Communicating）"></a>进程通信（Processes Communicating）</h3><h4 id="客户机和服务器进程"><a href="#客户机和服务器进程" class="headerlink" title="客户机和服务器进程"></a>客户机和服务器进程</h4><p><strong>进程（Processe）</strong>：一台主机上运行的程序。</p>
-<ul>
-<li>在同一台主机上，两个进程通过进程间通信（inter-process communication）来进行通信。进程间通信由操作系统定义</li>
-<li>不同主机之间，进程通信同过报文交换</li>
+<h4 id="C-x2F-S和P2P体系结构的混合体"><a href="#C-x2F-S和P2P体系结构的混合体" class="headerlink" title="C&#x2F;S和P2P体系结构的混合体"></a>C&#x2F;S和P2P体系结构的混合体</h4><ul>
+<li>Napster<ul>
+<li>文件搜索:集中<ul>
+<li>主机在中心服务器上注册其资源</li>
+<li>主机向中心服务器查询资源位置</li>
 </ul>
-<p><strong>客户机进程（client process）</strong>：发起通信的进程。<br><strong>服务器进程（server process）</strong>：等待连接的进程。</p>
-<blockquote>
-<p>P2P应用也存在客户机进程和服务器进程。</p>
-</blockquote>
-<h4 id="进程与计算机网络之间的接口"><a href="#进程与计算机网络之间的接口" class="headerlink" title="进程与计算机网络之间的接口"></a>进程与计算机网络之间的接口</h4><p>进程通过一个称为套接字(sock-et) 的软件接口向网络发送报文和从网络接收报文。由于该套接字是建立网络应用程序的可编程接口，因此套接字也称为应用程序和网络之间的应用程序编程接口(Application Programming Interface, API) 。</p>
-<ul>
-<li>应用程序开发者可以控制套接字在应用层端的一切，但是对该套接字的运输层端几乎没有控制权。<blockquote>
-<p>应用程序开发者对于运输层的控制仅限于:</p>
-<ol>
-<li>选择运输层协议;</li>
-<li>也许能设定几个运输层参数，如最大缓存和最大报文段长度等。</li>
-</ol>
-</blockquote>
+</li>
+<li>文件传输:P2P <ul>
+<li>任意Peer节点之间</li>
+</ul>
 </li>
 </ul>
-<h4 id="进程寻址（Addressing-Processes）"><a href="#进程寻址（Addressing-Processes）" class="headerlink" title="进程寻址（Addressing Processes）"></a>进程寻址（Addressing Processes）</h4><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/socket.png"><br>如果两个主机之间的进程进行通信，发送端要知道接收端的:</p>
-<ol>
-<li>主机的地址(IP地址)。</li>
-<li>还需要知道在目的主机中指定接收进程的标识符(进程相应的端口号)。</li>
-</ol>
+</li>
+<li>即时通信<ul>
+<li>在线检测:集中</li>
+<li>当用户上线时，向中心服务器注册其IP地址</li>
+<li>用户与中心服务器联系，以找到其在线好友的位置</li>
+</ul>
+</li>
+<li>两个用户之间聊天:P2P</li>
+</ul>
+<h3 id="进程通信（Processes-Communicating）"><a href="#进程通信（Processes-Communicating）" class="headerlink" title="进程通信（Processes Communicating）"></a>进程通信（Processes Communicating）</h3><p><strong>进程（Processe）</strong>：一台主机上运行的应用程序。</p>
+<h4 id="客户机和服务器进程"><a href="#客户机和服务器进程" class="headerlink" title="客户机和服务器进程"></a>客户机和服务器进程</h4><p><strong>客户机进程（client process）</strong>：发起通信的进程。</p>
+<p><strong>服务器进程（server process）</strong>：等待连接的进程。</p>
+<ul>
+<li>在同一个主机内，使用进程间通信机制通信(操作系统定义)</li>
+<li>不同主机，通过交换报文(Message)来通信<ul>
+<li>使用OS提供的通信服务</li>
+<li>按照应用协议交换报文<ul>
+<li>借助传输层提供的服务</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <blockquote>
-<p>HTTP服务端口号80、邮件服务端口号25</p>
+<p>注意:P2P架构的应用也有客户端进程和服务器进程之分</p>
 </blockquote>
-<h3 id="可供应用程序使用的运输服务"><a href="#可供应用程序使用的运输服务" class="headerlink" title="可供应用程序使用的运输服务"></a>可供应用程序使用的运输服务</h3><blockquote>
-<p>在开发一个（网络）应用时，必须选择一种可用的运输层协议。<br>我们大体能够从四个方面对应用程序服务要求进行分类:可靠数据传输、吞吐量、定时和安全性。</p>
+<h4 id="分布式进程通信需要解决的问题"><a href="#分布式进程通信需要解决的问题" class="headerlink" title="分布式进程通信需要解决的问题"></a>分布式进程通信需要解决的问题</h4><p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/socket.png"></p>
+<ul>
+<li>问题1:进程标识和寻址问题（服务用户）</li>
+<li>问题2:传输层-&gt;应用层提供服务时如何进行的（服务）<ul>
+<li>位置：层间界面的SAP（TCP&#x2F;IP：socket）</li>
+<li>形式：应用程序接口API（TCP&#x2F;IP：socket API）</li>
+</ul>
+</li>
+<li>问题3:如何使用传输层提供的服务，实现应用进程之间的报文交换，实现应用(用户使用服务)<ul>
+<li>定义应用层协议:报文格式，解释，时序等</li>
+<li>编制程序，使用OS提供的API ，调用网络基础设施提供通信服务传报文，实现应用时序等;</li>
+</ul>
+</li>
+</ul>
+<p><strong>问题1：对进程进行编址(addressing)</strong></p>
+<ul>
+<li>进程为了接收报文，必须有一个标识<blockquote>
+<p>即:SAP(发送也需要标示)</p>
 </blockquote>
+<ul>
+<li>主机:唯一的 32位IP地址<ul>
+<li>仅仅有IP地址不能够唯一标示一个进程;在一台端系统上有很多应用进程在运行</li>
+<li>所采用的传输层协议:TCP or UDP</li>
+<li>端口号(Port Numbers)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>一些知名端口号的例子:<ul>
+<li>HTTP: TCP 80 Mail: TCP25 ftp:TCP 2</li>
+</ul>
+</li>
+<li>一个进程:用IP+port标示 端节点</li>
+<li>本质上，一对主机进程之间的通信由2个端节点构成</li>
+</ul>
+<p><strong>问题2:传输层提供的服务-需要穿过层间（应用层-&gt;传输层）的信息</strong></p>
+<ul>
+<li>层间接口必须要携带的信息<ul>
+<li>要传输的报文(对于本层来说:SDU)</li>
+<li>谁传的:对方的应用进程的标示:IP+TCP(UDP) 端口</li>
+<li>传给谁:对方的应用进程的标示:对方的IP+TCP(UDP)端口号</li>
+</ul>
+</li>
+<li>传输层实体(tcp或者udp实体)根据这些信息进行TCP 报文段(UDP数据报)的封装<ul>
+<li>源端口号，目标端口号，数据等</li>
+<li>将IP地址往下交IP实体，用于封装IP数据报:源IP,目标IP</li>
+</ul>
+</li>
+</ul>
+<p><strong>问题2:传输层提供的服务-层间信息的代码</strong></p>
+<ul>
+<li>如果Socket API 每次传输报文，都携带如此多的信息，太繁琐易错，不便于管理</li>
+<li>用个代号标示通信的双方或者单方:socket  就像OS打开文件返回的句柄一样<ul>
+<li>对句柄的操作，就是对文件的操作</li>
+</ul>
+</li>
+<li>TCP socket:<ul>
+<li>TCP服务，两个进程之间的通信需要之前要建立连接  两个进程通信会持续一段时间，通信关系稳定</li>
+<li>可以用一个整数表示两个应用实体之间的通信关系 ，本地标示</li>
+<li>穿过层间接口的信息量最小</li>
+<li>TCP socket:源IP,源端口，目标IP，目标IP,目标端口</li>
+</ul>
+</li>
+<li>UDP socket:<ul>
+<li>UDP服务，两个进程之间的通信需要之前无需建立连接<ul>
+<li>每个报文都是独立传输的</li>
+<li>前后报文可能给不同的分布式进程</li>
+</ul>
+</li>
+<li>因此，只能用一个整数表示本应用实体的标示<ul>
+<li>因为这个报文可能传给另外一个分布式进程</li>
+</ul>
+</li>
+<li>穿过层间接口的信息大小最小</li>
+<li>UDP socket:本IP,本端口</li>
+<li>但是传输报文时:必须要提供对方IP，port<ul>
+<li>接收报文时: 传输层需要上传对方的IP，port</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>TCP之上的套接字(socket)</strong></p>
+<ul>
+<li>对于使用面向连接服务(TCP)的应用而言，套接字是4元组的一个具有本地意义的标示<ul>
+<li>4元组:(源IP，源port，目标IP，目标port)</li>
+<li>唯一的指定了一个会话(2个进程之间的会话关系)</li>
+<li>应用使用这个标示，与远程的应用进程通信</li>
+<li>不必在每一个报文的发送都要指定这4元组</li>
+<li>就像使用操作系统打开一个文件，OS返回一个文件句柄一样，以后使用这个文件句柄，而不是使用这个文件的目录名、文件名</li>
+<li>简单，便于管理</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/TCPsocket.png"></p>
+<p><strong>UDP之上的套接字(socket)</strong></p>
+<ul>
+<li>对于使用无连接服务(UDP)的应用而言，套接字是2元组的一个具有本地意义的标示<ul>
+<li>2元组:IP，port (源端指定)</li>
+<li>UDP套接字指定了应用所在的一个端节点(endpoint)</li>
+<li>在发送数据报时，采用创建好的本地套接字(标示 ID)，就不必在发送每个报文中指明自己所采用的 ip和port</li>
+<li>但是在发送报文时，必须要指定对方的ip和udp port(另外一个段节点)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/UDPsocket.png"></p>
+<p><strong>套接字(Socket)</strong></p>
+<ul>
+<li>进程向<strong>套接字</strong>发送报文或从<strong>套接字</strong>接收报文 </li>
+<li>套接字 &lt;-&gt; 门户<ul>
+<li>发送进程将报文<strong>推出</strong>门户，发送进程依赖于传输层设施在另外一侧的 门将报文交付给接受进程</li>
+<li>接收进程从另外一端的门户<strong>收到</strong>报文(依赖于传输层设施)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/%E5%A5%97%E6%8E%A5%E5%AD%97.png"></p>
+<p><strong>问题3:如何使用传输层提供的服务实现应用</strong></p>
+<ul>
+<li>定义应用层协议:报文格式，解释，时序等</li>
+<li>编制程序，通过API调用网络基础设施提供通信服务传报文，解析报文，实现应用时序等</li>
+</ul>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux</title>
-    <url>/2022/02/21/linux/</url>
-    <content><![CDATA[<blockquote>
-<p>Linux 学习</p>
-</blockquote>
-<p>​    <span id="more"></span></p>
-<h1 id="服务器管理"><a href="#服务器管理" class="headerlink" title="服务器管理"></a>服务器管理</h1><ul>
-<li><code>.ssh/config</code>文件中配置服务器别名</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host name</span><br><span class="line">    HostName ip</span><br><span class="line">    User username</span><br><span class="line">    Port port_id</span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li>配置免密登录 <code>ubuntu:ssh-copy-id username@ip</code></li>
-<li></li>
-</ul>
-<h1 id="Linux-用户和用户组设置"><a href="#Linux-用户和用户组设置" class="headerlink" title="Linux 用户和用户组设置"></a>Linux 用户和用户组设置</h1><ul>
-<li>创建新用户<code>ubuntu:adduser username</code></li>
-<li>为用户分配<em>sudo</em>权限<code>ubuntu:usermod -aG sudo username</code></li>
-</ul>
-<h1 id="Linux-应用安装"><a href="#Linux-应用安装" class="headerlink" title="Linux 应用安装"></a>Linux 应用安装</h1><ul>
-<li>获取最近的软件包列表<code>ubuntu:sudo apt-get update</code></li>
-</ul>
-<h1 id="scp-使用"><a href="#scp-使用" class="headerlink" title="scp 使用"></a>scp 使用</h1><ul>
-<li>传输文件到其他服务器<code>ubuntu: scp filename username@ip:path</code></li>
-</ul>
-<h1 id="软件源配置"><a href="#软件源配置" class="headerlink" title="软件源配置"></a>软件源配置</h1><p>更改 <code>/etc/apt/sources.list</code>文件为所需软件源</p>
-<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">清华软件源</a></p>
-<h1 id="docker-注：转载至-AcWing-Linux"><a href="#docker-注：转载至-AcWing-Linux" class="headerlink" title="docker 注：转载至 AcWing.Linux"></a>docker <em>注：转载至 <a href="https://www.acwing.com/">AcWing.Linux</a></em></h1><ul>
-<li><p><strong>安装地址<a href="https://docs.docker.com/engine/install/ubuntu/">ubuntu</a></strong></p>
-</li>
-<li><p><strong>将当前用户添加到docker用户组</strong><br>为了避免每次使用docker命令都需要加上sudo权限，可以将当前用户加入安装中自动创建的docker用户组(可以参考官方文档)：</p>
-<p><code>sudo usermod -aG docker $USER</code></p>
-</li>
-<li><p><strong>镜像（images）</strong></p>
-<ol>
-<li>docker pull ubuntu:20.04：拉取一个镜像</li>
-<li>docker images：列出本地所有镜像</li>
-<li>docker image rm ubuntu:20.04 或 docker rmi ubuntu:20.04：删除镜像ubuntu:20.04</li>
-<li>docker [container] commit CONTAINER IMAGE_NAME:TAG：创建某个container的镜像</li>
-<li>docker save -o ubuntu_20_04.tar ubuntu:20.04：将镜像ubuntu:20.04导出到本地文件ubuntu_20_04.tar中</li>
-<li>docker load -i ubuntu_20_04.tar：将镜像ubuntu:20.04从本地文件ubuntu_20_04.tar中加载出来</li>
-</ol>
-</li>
-<li><p><strong>容器(container)</strong></p>
-<ol>
-<li><p>docker [container] create -it ubuntu:20.04：利用镜像ubuntu:20.04创建一个容器。</p>
-</li>
-<li><p>docker ps -a：查看本地的所有容器</p>
-</li>
-<li><p>docker [container] start CONTAINER：启动容器</p>
-</li>
-<li><p>docker [container] stop CONTAINER：停止容器</p>
-</li>
-<li><p>docker [container] restart CONTAINER：重启容器</p>
-</li>
-<li><p>docker [contaienr] run -itd ubuntu:20.04：创建并启动一个容器</p>
-</li>
-<li><p>docker [container] attach CONTAINER：进入容器</p>
-<ul>
-<li>先按Ctrl-p，再按Ctrl-q可以挂起容器</li>
-</ul>
-</li>
-<li><p>docker [container] exec CONTAINER COMMAND：在容器中执行命令</p>
-</li>
-<li><p>docker [container] rm CONTAINER：删除容器</p>
-</li>
-<li><p>docker container prune：删除所有已停止的容器</p>
-</li>
-<li><p>docker export -o xxx.tar CONTAINER：将容器CONTAINER导出到本地文件xxx.tar中</p>
-</li>
-<li><p>docker import xxx.tar image_name:tag：将本地文件xxx.tar导入成镜像，并将镜像命名为image_name:tag</p>
-</li>
-<li><p>docker export&#x2F;import与docker save&#x2F;load的区别：</p>
-<ul>
-<li><p>export&#x2F;import会丢弃历史记录和元数据信息，仅保存容器当时的快照状态</p>
-</li>
-<li><p>save&#x2F;load会保存完整记录，体积更大</p>
-</li>
-</ul>
-</li>
-<li><p>docker top CONTAINER：查看某个容器内的所有进程</p>
-</li>
-<li><p>docker stats：查看所有容器的统计信息，包括CPU、内存、存储、网络等信息</p>
-</li>
-<li><p>docker cp xxx CONTAINER:xxx 或 docker cp CONTAINER:xxx xxx：在本地和容器间复制文件</p>
-</li>
-<li><p>docker rename CONTAINER1 CONTAINER2：重命名容器</p>
-</li>
-<li><p>docker update CONTAINER –memory 500MB：修改容器限制</p>
-</li>
-</ol>
-</li>
-</ul>
-<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><ul>
-<li>过滤某些文件的上传：<ol>
-<li>在Git根目录下创建<code>.gitignore    </code>文件</li>
-<li>将需要过滤的文件名按照列表的形式一行一个保存在<code>.gitignore</code>文件中<br><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220221180050.png" alt="实例"></li>
-</ol>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
 </search>
