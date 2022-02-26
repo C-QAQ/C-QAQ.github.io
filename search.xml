@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
+<span id="more"></span>
+
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Django</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Algorithm Problem Solving</title>
     <url>/2022/02/20/Algorithm-Problem-Solving/</url>
     <content><![CDATA[<p><strong>简介</strong></p>
@@ -35,22 +51,6 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>Algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Django</title>
-    <url>/2022/02/21/django/</url>
-    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
-<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
-<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
-<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
-<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
-</ol>
-<span id="more"></span>
-
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Django</tag>
       </tags>
   </entry>
   <entry>
@@ -224,7 +224,7 @@
   <entry>
     <title>计算机网络</title>
     <url>/2022/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
-    <content><![CDATA[<p>（开头：1 —–<strong>目前：64</strong>—– 结尾478）</p>
+    <content><![CDATA[<p>（开头：1 —–<strong>目前：74(条件GET方法)</strong>—– 结尾478）</p>
 <span id="more"></span>
 
 <p>【<a href="https://www.yinkuiwang.cn/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95/">推荐博客</a> <a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">推荐博客2</a>】<br>【<a href="https://mac-air.obs.cn-north-4.myhuaweicloud.com/%E8%AF%BE%E4%BB%B6/ustc-zheng-cn.zip">推荐课件</a>】</p>
@@ -865,7 +865,7 @@
 </ul>
 </li>
 <li>URL格式：<ul>
-<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#x70;&#115;&#x77;&#x40;&#x77;&#x77;&#119;&#46;&#115;&#x6f;&#x6d;&#101;&#83;&#x63;&#x68;&#x6f;&#x6f;&#108;&#46;&#101;&#x64;&#x75;">&#x70;&#115;&#x77;&#x40;&#x77;&#x77;&#119;&#46;&#115;&#x6f;&#x6d;&#101;&#83;&#x63;&#x68;&#x6f;&#x6f;&#108;&#46;&#101;&#x64;&#x75;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
+<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#112;&#x73;&#x77;&#x40;&#119;&#119;&#x77;&#x2e;&#115;&#111;&#x6d;&#x65;&#83;&#x63;&#104;&#111;&#111;&#108;&#x2e;&#x65;&#100;&#117;">&#112;&#x73;&#x77;&#x40;&#119;&#119;&#x77;&#x2e;&#115;&#111;&#x6d;&#x65;&#83;&#x63;&#104;&#111;&#111;&#108;&#x2e;&#x65;&#100;&#117;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
 <li><strong>协议名</strong>：Prot</li>
 <li><strong>用户名：口令</strong>：user:psw</li>
 <li><strong>主机名</strong>：<a href="http://www.someschool.edu/">www.someSchool.edu</a></li>
