@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Django</title>
-    <url>/2022/02/21/django/</url>
-    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
-<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
-<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
-<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
-<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
-</ol>
-<span id="more"></span>
-
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Django</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/02/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-  </entry>
-  <entry>
     <title>Algorithm Problem Solving</title>
     <url>/2022/02/20/Algorithm-Problem-Solving/</url>
     <content><![CDATA[<p><strong>简介</strong></p>
@@ -92,26 +56,24 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2022/02/10/test/</url>
-    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
+    <title>Hello World</title>
+    <url>/2022/02/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <span id="more"></span>
 
-<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>test</tag>
-      </tags>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
   </entry>
   <entry>
     <title>Linux</title>
@@ -219,6 +181,155 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sql</title>
+    <url>/2022/03/01/sql/</url>
+    <content><![CDATA[<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><blockquote>
+<p>&#x2F;* … *&#x2F;</p>
+<p>–</p>
+<p>#</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="语句结束标志"><a href="#语句结束标志" class="headerlink" title="语句结束标志"></a>语句结束标志</h1><blockquote>
+<p>;</p>
+</blockquote>
+<h1 id="SQL语法分类"><a href="#SQL语法分类" class="headerlink" title="SQL语法分类"></a>SQL语法分类</h1><blockquote>
+<p>DDL(Data Definition Language) 数据定义语言，用来定义数据库对象：数据库、表、列等<br>DML(Data Manipulation Language) 数据操作语言，用来对数据库中表的数据进行增删改<br>DQL(Data Query Language) 数据查询语言，用来查询数据库中表的记录(数据)<br>DCL(Data Control Language) 数据控制语言，用来定义数据库的访问权限和安全级别，及创建用户</p>
+</blockquote>
+<h2 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h2><h3 id="DDL-–-操作数据库"><a href="#DDL-–-操作数据库" class="headerlink" title="DDL – 操作数据库"></a>DDL – 操作数据库</h3><ol>
+<li>查询数据库名称<blockquote>
+<p><code>show databases;</code></p>
+</blockquote>
+</li>
+<li>创建数据库<blockquote>
+<p><code>create database 数据库名称</code><br>更安全的方式：<code>creata database if not exists 数据库名称</code></p>
+</blockquote>
+</li>
+<li>删除数据库<blockquote>
+<p><code>drop database 数据库名称</code><br><code>drop database if exists 数据库名称</code></p>
+</blockquote>
+</li>
+<li>使用数据库<blockquote>
+<p><code>use 数据库名称</code><br><code>use if exists 数据库名称</code></p>
+</blockquote>
+<h3 id="DDL-–-操作数据库中的表"><a href="#DDL-–-操作数据库中的表" class="headerlink" title="DDL – 操作数据库中的表"></a>DDL – 操作数据库中的表</h3></li>
+</ol>
+<ul>
+<li>创建(Create)</li>
+<li>查询(Retrieve)</li>
+<li>修改(Uodate)</li>
+<li>删除(Delte)</li>
+</ul>
+<ol>
+<li>查询当前数据库有哪些表<blockquote>
+<p><code>show tables;</code></p>
+</blockquote>
+</li>
+<li>查询表的结构<blockquote>
+<p><code>desc 表名称;</code></p>
+</blockquote>
+</li>
+<li>创建表<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> 表名 (</span><br><span class="line">字段名<span class="number">1</span> 数据类型<span class="number">1</span>,</span><br><span class="line">字段名<span class="number">2</span> 数据类型<span class="number">2</span>,</span><br><span class="line">...</span><br><span class="line">字段名n 数据类型n,</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><strong>数据类型:</strong><br><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/picgo/20220301155253.png"></p>
+<ol start="4">
+<li>DDL – 删除表<blockquote>
+<p><code>drop table 表名;</code></p>
+<p>更安全的方式：<code>drop table if exists 表名;</code></p>
+</blockquote>
+</li>
+<li>DDL – 修改表</li>
+</ol>
+<ul>
+<li>修改表名<blockquote>
+<p><code>alter table 表名 rename to 新表名;</code></p>
+</blockquote>
+</li>
+<li>添加一列<blockquote>
+<p><code>alter table 表名 add 列名 数据类型;</code></p>
+</blockquote>
+</li>
+<li>修改数据类型<blockquote>
+<p><code>alter table 表名 modify 列名 新数据类型;</code></p>
+</blockquote>
+</li>
+<li>修改列名和数据类型<blockquote>
+<p><code>alter table 表名 change 列名 新列名 新数据类型;</code></p>
+</blockquote>
+</li>
+<li>删除列<blockquote>
+<p><code>alter table 表名 drop 列名;</code></p>
+</blockquote>
+<h2 id="DML-–-对表中数据进行增删改"><a href="#DML-–-对表中数据进行增删改" class="headerlink" title="DML – 对表中数据进行增删改"></a>DML – 对表中数据进行增删改</h2></li>
+<li>添加(insert)</li>
+<li>修改(update)</li>
+<li>删除(delete)</li>
+</ul>
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><ol>
+<li>给指定列添加数据<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span></span><br><span class="line">表名(列名<span class="number">1</span>, 列名<span class="number">2</span>, ...)</span><br><span class="line"><span class="keyword">values</span>(值<span class="number">1</span>, 值<span class="number">2</span>, ...);</span><br></pre></td></tr></table></figure></li>
+<li>给全部列添加数据<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">values</span>(值<span class="number">1</span>，值<span class="number">2</span>，...);</span><br></pre></td></tr></table></figure></li>
+<li>批量添加数据<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span></span><br><span class="line">表名(列名<span class="number">1</span>,，列名<span class="number">2</span>，...)</span><br><span class="line"><span class="keyword">values</span>(值<span class="number">1</span>，值<span class="number">2</span>，...),(值<span class="number">1</span>，值<span class="number">2</span>，...),(值<span class="number">1</span>，值<span class="number">2</span>，...)...;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- or</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">values</span>(值<span class="number">1</span>，值<span class="number">2</span>，...),(值<span class="number">1</span>，值<span class="number">2</span>，...),(值<span class="number">1</span>，值<span class="number">2</span>，...)...;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><ol>
+<li>修改表中数据<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">update</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">set</span> 列名<span class="number">1</span><span class="operator">=</span>值<span class="number">1</span>, 列名<span class="number">2</span><span class="operator">=</span>值<span class="number">2</span>, ...</span><br><span class="line"><span class="keyword">where</span> 条件;</span><br></pre></td></tr></table></figure>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3></li>
+<li>删除表中数据<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">where</span> 条件;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="DQL-–-对表中数据进行查询"><a href="#DQL-–-对表中数据进行查询" class="headerlink" title="DQL – 对表中数据进行查询"></a>DQL – 对表中数据进行查询</h2><ul>
+<li>条件查询(where)</li>
+<li>分组查询(group by)</li>
+<li>排序查询(order by)</li>
+<li>分页查询(limit)</li>
+</ul>
+<ol>
+<li>查询表中多个字段<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">selet</span><br><span class="line">列名<span class="number">1</span>, 列名<span class="number">2</span>, 列名...</span><br><span class="line"><span class="keyword">from</span> 表名;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- or</span></span><br><span class="line"></span><br><span class="line">selet <span class="operator">*</span> <span class="keyword">from</span> 表名;</span><br></pre></td></tr></table></figure></li>
+<li>去除重复记录<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">selet <span class="keyword">distinct</span></span><br><span class="line">字段列表</span><br><span class="line"><span class="keyword">from</span> 表名;</span><br></pre></td></tr></table></figure></li>
+<li>起别名<br>as</li>
+</ol>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
+<span id="more"></span>
+
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Django</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2022/02/10/test/</url>
+    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
+<span id="more"></span>
+
+<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
+
+<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>test</tag>
       </tags>
   </entry>
   <entry>
@@ -865,7 +976,7 @@
 </ul>
 </li>
 <li>URL格式：<ul>
-<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#112;&#115;&#119;&#x40;&#x77;&#119;&#119;&#46;&#115;&#x6f;&#109;&#101;&#x53;&#99;&#x68;&#111;&#111;&#108;&#x2e;&#101;&#100;&#117;">&#112;&#115;&#119;&#x40;&#x77;&#119;&#119;&#46;&#115;&#x6f;&#109;&#101;&#x53;&#99;&#x68;&#111;&#111;&#108;&#x2e;&#101;&#100;&#117;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
+<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#x70;&#115;&#x77;&#x40;&#119;&#x77;&#119;&#46;&#115;&#111;&#x6d;&#x65;&#83;&#99;&#x68;&#111;&#111;&#108;&#46;&#x65;&#100;&#117;">&#x70;&#115;&#x77;&#x40;&#119;&#x77;&#119;&#46;&#115;&#111;&#x6d;&#x65;&#83;&#99;&#x68;&#111;&#111;&#108;&#46;&#x65;&#100;&#117;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
 <li><strong>协议名</strong>：Prot</li>
 <li><strong>用户名：口令</strong>：user:psw</li>
 <li><strong>主机名</strong>：<a href="http://www.someschool.edu/">www.someSchool.edu</a></li>
@@ -1133,7 +1244,7 @@
 <li>IP地址标识主机、路由器</li>
 <li>但IP地址不好记忆，不便人类使用(没有意义)</li>
 <li>人类一般倾向于使用一些有意义的字符串来标识Internet上的设备<blockquote>
-<p>例如:<a href="mailto:&#x71;&#x7a;&#104;&#x65;&#x6e;&#x67;&#64;&#x75;&#115;&#116;&#99;&#x2e;&#101;&#x64;&#117;&#46;&#99;&#x6e;">&#x71;&#x7a;&#104;&#x65;&#x6e;&#x67;&#64;&#x75;&#115;&#116;&#99;&#x2e;&#101;&#x64;&#117;&#46;&#99;&#x6e;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
+<p>例如:<a href="mailto:&#x71;&#x7a;&#x68;&#x65;&#110;&#x67;&#64;&#117;&#x73;&#116;&#99;&#x2e;&#101;&#x64;&#x75;&#46;&#x63;&#x6e;">&#x71;&#x7a;&#x68;&#x65;&#110;&#x67;&#64;&#117;&#x73;&#116;&#99;&#x2e;&#101;&#x64;&#x75;&#46;&#x63;&#x6e;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
 </blockquote>
 </li>
 <li>存在着“字符串”—IP地址的转换的必要性</li>
