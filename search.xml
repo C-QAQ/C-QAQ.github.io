@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django</title>
+    <url>/2022/02/21/django/</url>
+    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
+<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
+<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
+<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
+<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
+</ol>
+<span id="more"></span>
+
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Django</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Algorithm Problem Solving</title>
     <url>/2022/02/20/Algorithm-Problem-Solving/</url>
     <content><![CDATA[<p><strong>简介</strong></p>
@@ -35,60 +51,6 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>Algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Django</title>
-    <url>/2022/02/21/django/</url>
-    <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
-<li>启动nginx服务sudo &#x2F;etc&#x2F;init.d&#x2F;nginx start</li>
-<li>启动redis-server服务 sudo redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</li>
-<li>启动uwsgi服务 uwsgi –ini scripts&#x2F;uwsgi.ini</li>
-<li>启动 django_channels服务 daphne -b 0.0.0.0 -p 5015 acapp.asgi:application</li>
-</ol>
-<span id="more"></span>
-
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Django</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/02/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-  </entry>
-  <entry>
-    <title>html</title>
-    <url>/2022/02/22/html/</url>
-    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<ul>
-<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
-</li>
-<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -197,6 +159,24 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>html</title>
+    <url>/2022/02/22/html/</url>
+    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
+</li>
+<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -309,6 +289,26 @@
       <tags>
         <tag>sql</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/02/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
   </entry>
   <entry>
     <title>test</title>
@@ -976,7 +976,7 @@
 </ul>
 </li>
 <li>URL格式：<ul>
-<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#x70;&#x73;&#x77;&#x40;&#119;&#x77;&#119;&#46;&#115;&#111;&#109;&#101;&#83;&#x63;&#x68;&#111;&#111;&#108;&#46;&#x65;&#x64;&#117;">&#x70;&#x73;&#x77;&#x40;&#119;&#x77;&#119;&#46;&#115;&#111;&#109;&#101;&#83;&#x63;&#x68;&#111;&#111;&#108;&#46;&#x65;&#x64;&#117;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
+<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#x70;&#115;&#119;&#64;&#x77;&#119;&#119;&#46;&#x73;&#111;&#109;&#101;&#x53;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#x2e;&#101;&#100;&#x75;">&#x70;&#115;&#119;&#64;&#x77;&#119;&#119;&#46;&#x73;&#111;&#109;&#101;&#x53;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#x2e;&#101;&#100;&#x75;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
 <li><strong>协议名</strong>：Prot</li>
 <li><strong>用户名：口令</strong>：user:psw</li>
 <li><strong>主机名</strong>：<a href="http://www.someschool.edu/">www.someSchool.edu</a></li>
@@ -1244,7 +1244,7 @@
 <li>IP地址标识主机、路由器</li>
 <li>但IP地址不好记忆，不便人类使用(没有意义)</li>
 <li>人类一般倾向于使用一些有意义的字符串来标识Internet上的设备<blockquote>
-<p>例如:<a href="mailto:&#x71;&#x7a;&#x68;&#x65;&#110;&#x67;&#64;&#117;&#x73;&#x74;&#x63;&#x2e;&#101;&#100;&#x75;&#46;&#99;&#110;">&#x71;&#x7a;&#x68;&#x65;&#110;&#x67;&#64;&#117;&#x73;&#x74;&#x63;&#x2e;&#101;&#100;&#x75;&#46;&#99;&#110;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
+<p>例如:<a href="mailto:&#x71;&#122;&#104;&#x65;&#110;&#x67;&#64;&#117;&#115;&#116;&#x63;&#x2e;&#101;&#x64;&#117;&#46;&#99;&#x6e;">&#x71;&#122;&#104;&#x65;&#110;&#x67;&#64;&#117;&#115;&#116;&#x63;&#x2e;&#101;&#x64;&#117;&#46;&#99;&#x6e;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
 </blockquote>
 </li>
 <li>存在着“字符串”—IP地址的转换的必要性</li>
@@ -1462,7 +1462,28 @@
 <li>可能存在的问题:如果情况变化，缓存结果和权威资源记录不一致</li>
 <li>解决方案:<strong>TTL</strong>(默认2天)</li>
 </ul>
-<p><strong>攻击DNS</strong><br>DDoS 攻击:</p>
+<h3 id="问题3-维护问题-新增一个域"><a href="#问题3-维护问题-新增一个域" class="headerlink" title="问题3:维护问题:新增一个域"></a>问题3:维护问题:新增一个域</h3><ul>
+<li>在上级域的名字服务器中增加两条记录，指向这个新增的子域的域名和域名服务器的地址</li>
+<li>在新增子域的名字服务器上运行名字服务器，负责本域的名字解析: 名字-&gt;IP地址<blockquote>
+<p>例子:在com域中建立一个“Network Utopia”</p>
+</blockquote>
+</li>
+<li>到注册登记机构注册域名networkutopia.com<ul>
+<li>需要向该机构提供权威DNS服务器(基本的、和辅助的)的名字 和IP地址</li>
+<li>登记机构在com TLD服务器中插入两条RR记录:<ul>
+<li>(networkutopia.com, dns1.networkutopia.com, NS) </li>
+<li>(dns1.networkutopia.com, 212.212.212.1, A)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>在networkutopia.com的权威服务器中确保有<ul>
+<li>用于Web服务器的<a href="http://www.networkuptopia.com的类型为a的记录/">www.networkuptopia.com的类型为A的记录</a></li>
+<li>用于邮件服务器mail.networkutopia.com的类型为MX的记录</li>
+</ul>
+</li>
+</ul>
+<h3 id="攻击DNS"><a href="#攻击DNS" class="headerlink" title="攻击DNS"></a>攻击DNS</h3><p>DDoS 攻击:</p>
 <ul>
 <li>对根服务器进行流量轰炸攻击:发送大量ping<ul>
 <li>没有成功</li>
@@ -1493,27 +1514,6 @@
 <li>伪造某个IP进行查询， 攻击这个目标IP</li>
 <li>查询放大，响应报文比查询报文大</li>
 <li>效果有限</li>
-</ul>
-<h3 id="问题3-维护问题-新增一个域"><a href="#问题3-维护问题-新增一个域" class="headerlink" title="问题3:维护问题:新增一个域"></a>问题3:维护问题:新增一个域</h3><ul>
-<li>在上级域的名字服务器中增加两条记录，指向这个新增的子域的域名和域名服务器的地址</li>
-<li>在新增子域的名字服务器上运行名字服务器，负责本域的名字解析: 名字-&gt;IP地址<blockquote>
-<p>例子:在com域中建立一个“Network Utopia”</p>
-</blockquote>
-</li>
-<li>到注册登记机构注册域名networkutopia.com<ul>
-<li>需要向该机构提供权威DNS服务器(基本的、和辅助的)的名字 和IP地址</li>
-<li>登记机构在com TLD服务器中插入两条RR记录:<ul>
-<li>(networkutopia.com, dns1.networkutopia.com, NS) </li>
-<li>(dns1.networkutopia.com, 212.212.212.1, A)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>在networkutopia.com的权威服务器中确保有<ul>
-<li>用于Web服务器的<a href="http://www.networkuptopia.com的类型为a的记录/">www.networkuptopia.com的类型为A的记录</a></li>
-<li>用于邮件服务器mail.networkutopia.com的类型为MX的记录</li>
-</ul>
-</li>
 </ul>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
