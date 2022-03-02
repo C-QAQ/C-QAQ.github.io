@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Algorithm Problem Solving</title>
+    <url>/2022/02/20/Algorithm-Problem-Solving/</url>
+    <content><![CDATA[<p><strong>简介</strong></p>
+<blockquote>
+<p>做题记录</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="AcWing"><a href="#AcWing" class="headerlink" title="AcWing"></a>AcWing</h1><h2 id="4226-非常可乐"><a href="#4226-非常可乐" class="headerlink" title="4226. 非常可乐"></a>4226. 非常可乐</h2><ul>
+<li><p><a href="https://www.acwing.com/problem/content/description/4229/">原题链接</a></p>
+</li>
+<li><blockquote>
+<p>BFS: 暴力枚举当前情况可变成其他合法情况</p>
+<p>合法要求：自己不能倒向自己，不能超出容积</p>
+</blockquote>
+</li>
+<li><p>ACcode</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> st[<span class="number">101</span>][<span class="number">101</span>][<span class="number">101</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="comment">/* data */</span></span><br><span class="line">    <span class="type">int</span> a, b, c, cnt;</span><br><span class="line">&#125; node;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">m</span><span class="params">(<span class="number">3</span>)</span>, <span class="title">w</span><span class="params">(<span class="number">3</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i ++ ) cin &gt;&gt; m[i];</span><br><span class="line">    <span class="keyword">if</span> (!m[<span class="number">0</span>]) <span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">memset</span>(st, <span class="literal">false</span>, <span class="built_in">sizeof</span>(st));</span><br><span class="line">    queue&lt;node&gt; q;</span><br><span class="line">    q.<span class="built_in">push</span>(&#123;m[<span class="number">0</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;);</span><br><span class="line">    <span class="keyword">while</span> (!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">        node now = q.<span class="built_in">front</span>(); q.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="type">int</span> a = now.a, b = now.b, c = now.c, cnt = now.cnt;</span><br><span class="line">        <span class="keyword">if</span> ((a == b &amp;&amp; c == <span class="number">0</span>) || (a == c &amp;&amp; b == <span class="number">0</span>) || (b == c &amp;&amp; a == <span class="number">0</span>)) &#123;</span><br><span class="line">            cout &lt;&lt; cnt &lt;&lt; <span class="string">&quot;\n&quot;</span>; <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j ++ ) &#123;</span><br><span class="line">                w[<span class="number">0</span>] = a, w[<span class="number">1</span>] = b, w[<span class="number">2</span>] = c;</span><br><span class="line">                <span class="keyword">if</span> ((i ^ j) &amp;&amp; w[i] &amp;&amp; (m[j] - w[j])) &#123;</span><br><span class="line">                    <span class="type">int</span> to = <span class="built_in">min</span>(w[i], m[j] - w[j]);</span><br><span class="line">                    w[i] -= to, w[j] += to;</span><br><span class="line">                    <span class="keyword">if</span> (st[w[<span class="number">0</span>]][w[<span class="number">1</span>]][w[<span class="number">2</span>]]) <span class="keyword">continue</span>;</span><br><span class="line">                    st[w[<span class="number">0</span>]][w[<span class="number">1</span>]][w[<span class="number">2</span>]] = <span class="literal">true</span>;</span><br><span class="line">                    q.<span class="built_in">push</span>(&#123;w[<span class="number">0</span>], w[<span class="number">1</span>], w[<span class="number">2</span>], cnt + <span class="number">1</span>&#125;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;NO\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="4227-找路"><a href="#4227-找路" class="headerlink" title="4227. 找路"></a>4227. 找路</h2><ul>
+<li><p><a href="https://www.acwing.com/problem/content/description/4230/">原题链接</a></p>
+</li>
+<li><blockquote>
+<p>以 <code>Y, M</code>为起点两次 BFS 求得两个起点到所有可到达点的最短距离</p>
+</blockquote>
+</li>
+<li><p>ACcode</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> PII = pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> se second</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;/Users/c/algorithm/LOCAL/algo/debug.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug(...) 42</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">210</span>, INF = <span class="number">1</span> &lt;&lt; <span class="number">30</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> dx[] = &#123;<span class="number">-1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>&#125;, dy[] = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">1</span>&#125;;</span><br><span class="line"><span class="type">int</span> dist[<span class="number">2</span>][N][N];</span><br><span class="line"><span class="type">char</span> a[N][N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">    <span class="type">int</span> n, m;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &gt;&gt; m) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; j ++ )</span><br><span class="line">                cin &gt;&gt; a[i][j];</span><br><span class="line">        <span class="built_in">memset</span>(dist, <span class="number">0</span>, <span class="keyword">sizeof</span> dist);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> x = <span class="number">0</span>; x &lt; n; x ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> y = <span class="number">0</span>; y &lt; m; y ++ ) <span class="keyword">if</span> (a[x][y] == <span class="string">&#x27;Y&#x27;</span> || a[x][y] == <span class="string">&#x27;M&#x27;</span>) &#123;</span><br><span class="line">                <span class="type">int</span> c;</span><br><span class="line">                <span class="keyword">if</span> (a[x][y] == <span class="string">&#x27;Y&#x27;</span>) c = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">else</span> c = <span class="number">1</span>;</span><br><span class="line">                queue&lt;PII&gt; q; q.<span class="built_in">push</span>(&#123;x, y&#125;); dist[c][x][y] = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">while</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                    PII now = q.<span class="built_in">front</span>(); q.<span class="built_in">pop</span>();</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> o = <span class="number">0</span>; o &lt; <span class="number">4</span>; o ++ ) &#123;</span><br><span class="line">                        <span class="type">int</span> nex = now.fi + dx[o], ney = now.se + dy[o];</span><br><span class="line">                        <span class="keyword">if</span> (nex &lt; <span class="number">0</span> || nex &gt;= n || ney &lt; <span class="number">0</span> || ney &gt;= m || a[nex][ney] == <span class="string">&#x27;#&#x27;</span> || dist[c][nex][ney]) <span class="keyword">continue</span>;</span><br><span class="line">                        q.<span class="built_in">push</span>(&#123;nex, ney&#125;);</span><br><span class="line">                        dist[c][nex][ney] = dist[c][now.fi][now.se] + <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="type">int</span> ans = INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; j ++ ) <span class="keyword">if</span> (a[i][j] == <span class="string">&#x27;@&#x27;</span> &amp;&amp; dist[<span class="number">0</span>][i][j] &amp;&amp; dist[<span class="number">1</span>][i][j])</span><br><span class="line">                ans = <span class="built_in">min</span>(ans, (dist[<span class="number">0</span>][i][j] + dist[<span class="number">1</span>][i][j] - <span class="number">2</span>) * <span class="number">11</span>);</span><br><span class="line">        cout &lt;&lt; ans &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Django</title>
     <url>/2022/02/21/django/</url>
     <content><![CDATA[<h1 id="服务运行顺序"><a href="#服务运行顺序" class="headerlink" title="服务运行顺序"></a>服务运行顺序</h1><ol>
@@ -35,6 +72,24 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>html</title>
+    <url>/2022/02/22/html/</url>
+    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
+</li>
+<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
   </entry>
   <entry>
     <title>Linux</title>
@@ -142,46 +197,6 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>html</title>
-    <url>/2022/02/22/html/</url>
-    <content><![CDATA[<h4 id="我的第一个html文件"><a href="#我的第一个html文件" class="headerlink" title="我的第一个html文件"></a>我的第一个html文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">&quot;1&quot;</span> <span class="attr">srcolldelay</span>=<span class="string">&quot;1&quot;</span> <span class="attr">onmouseover</span>=<span class="string">&quot;stop()&quot;</span> <span class="attr">onmouseout</span>=<span class="string">&quot;start()&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FF0000&quot;</span>&gt;</span>这是我的第一个 HTML5 网页哦<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<ul>
-<li><p>定义html版本为html5<code>&lt;!DOCTYPE html&gt; </code></p>
-</li>
-<li><p>html语言要位于<code>&lt;html&gt;&lt;/html&gt;</code>之间，使浏览器能够识别此代码为html代码</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2022/02/10/test/</url>
-    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
-<span id="more"></span>
-
-<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
-
-<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>test</tag>
       </tags>
   </entry>
   <entry>
@@ -296,9 +311,31 @@
       </tags>
   </entry>
   <entry>
+    <title>test</title>
+    <url>/2022/02/10/test/</url>
+    <content><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2><p><a href="https://c-qaq.github.io/">我的主页</a></p>
+<span id="more"></span>
+
+<img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/58.jpg" width="50%" height="50%">
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536622304&auto=0&height=66"></iframe>
+
+<iframe src="//player.bilibili.com/player.html?aid=592726787&bvid=BV1Lq4y1172g&cid=469408489&page=1" scrolling="no" border="0" width="560" height="315" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Hello World!!!</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World!!!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>^<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机网络</title>
     <url>/2022/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
-    <content><![CDATA[<p>（开头：1 —–<strong>目前：84(DNS提供的服务)</strong>—– 结尾478）</p>
+    <content><![CDATA[<p>（开头：1 —–<strong>目前：92(DNS提供的服务)</strong>—– 结尾478）</p>
 <span id="more"></span>
 
 <p>【<a href="https://www.yinkuiwang.cn/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95/">推荐博客</a> <a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">推荐博客2</a>】<br>【<a href="https://mac-air.obs.cn-north-4.myhuaweicloud.com/%E8%AF%BE%E4%BB%B6/ustc-zheng-cn.zip">推荐课件</a>】</p>
@@ -939,7 +976,7 @@
 </ul>
 </li>
 <li>URL格式：<ul>
-<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#112;&#x73;&#x77;&#64;&#119;&#x77;&#x77;&#x2e;&#x73;&#111;&#109;&#x65;&#x53;&#99;&#x68;&#111;&#111;&#x6c;&#x2e;&#101;&#100;&#x75;">&#112;&#x73;&#x77;&#64;&#119;&#x77;&#x77;&#x2e;&#x73;&#111;&#109;&#x65;&#x53;&#99;&#x68;&#111;&#111;&#x6c;&#x2e;&#101;&#100;&#x75;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
+<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#x70;&#x73;&#x77;&#x40;&#119;&#x77;&#119;&#46;&#115;&#111;&#109;&#101;&#83;&#x63;&#x68;&#111;&#111;&#108;&#46;&#x65;&#x64;&#117;">&#x70;&#x73;&#x77;&#x40;&#119;&#x77;&#119;&#46;&#115;&#111;&#109;&#101;&#83;&#x63;&#x68;&#111;&#111;&#108;&#46;&#x65;&#x64;&#117;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
 <li><strong>协议名</strong>：Prot</li>
 <li><strong>用户名：口令</strong>：user:psw</li>
 <li><strong>主机名</strong>：<a href="http://www.someschool.edu/">www.someSchool.edu</a></li>
@@ -1207,7 +1244,7 @@
 <li>IP地址标识主机、路由器</li>
 <li>但IP地址不好记忆，不便人类使用(没有意义)</li>
 <li>人类一般倾向于使用一些有意义的字符串来标识Internet上的设备<blockquote>
-<p>例如:<a href="mailto:&#113;&#122;&#104;&#101;&#x6e;&#103;&#64;&#x75;&#115;&#116;&#99;&#46;&#101;&#100;&#117;&#x2e;&#x63;&#x6e;">&#113;&#122;&#104;&#101;&#x6e;&#103;&#64;&#x75;&#115;&#116;&#99;&#46;&#101;&#100;&#117;&#x2e;&#x63;&#x6e;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
+<p>例如:<a href="mailto:&#x71;&#x7a;&#x68;&#x65;&#110;&#x67;&#64;&#117;&#x73;&#x74;&#x63;&#x2e;&#101;&#100;&#x75;&#46;&#99;&#110;">&#x71;&#x7a;&#x68;&#x65;&#110;&#x67;&#64;&#117;&#x73;&#x74;&#x63;&#x2e;&#101;&#100;&#x75;&#46;&#99;&#110;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
 </blockquote>
 </li>
 <li>存在着“字符串”—IP地址的转换的必要性</li>
@@ -1481,43 +1518,6 @@
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Algorithm Problem Solving</title>
-    <url>/2022/02/20/Algorithm-Problem-Solving/</url>
-    <content><![CDATA[<p><strong>简介</strong></p>
-<blockquote>
-<p>做题记录</p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="AcWing"><a href="#AcWing" class="headerlink" title="AcWing"></a>AcWing</h1><h2 id="4226-非常可乐"><a href="#4226-非常可乐" class="headerlink" title="4226. 非常可乐"></a>4226. 非常可乐</h2><ul>
-<li><p><a href="https://www.acwing.com/problem/content/description/4229/">原题链接</a></p>
-</li>
-<li><blockquote>
-<p>BFS: 暴力枚举当前情况可变成其他合法情况</p>
-<p>合法要求：自己不能倒向自己，不能超出容积</p>
-</blockquote>
-</li>
-<li><p>ACcode</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> st[<span class="number">101</span>][<span class="number">101</span>][<span class="number">101</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="comment">/* data */</span></span><br><span class="line">    <span class="type">int</span> a, b, c, cnt;</span><br><span class="line">&#125; node;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">m</span><span class="params">(<span class="number">3</span>)</span>, <span class="title">w</span><span class="params">(<span class="number">3</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i ++ ) cin &gt;&gt; m[i];</span><br><span class="line">    <span class="keyword">if</span> (!m[<span class="number">0</span>]) <span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">memset</span>(st, <span class="literal">false</span>, <span class="built_in">sizeof</span>(st));</span><br><span class="line">    queue&lt;node&gt; q;</span><br><span class="line">    q.<span class="built_in">push</span>(&#123;m[<span class="number">0</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;);</span><br><span class="line">    <span class="keyword">while</span> (!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">        node now = q.<span class="built_in">front</span>(); q.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="type">int</span> a = now.a, b = now.b, c = now.c, cnt = now.cnt;</span><br><span class="line">        <span class="keyword">if</span> ((a == b &amp;&amp; c == <span class="number">0</span>) || (a == c &amp;&amp; b == <span class="number">0</span>) || (b == c &amp;&amp; a == <span class="number">0</span>)) &#123;</span><br><span class="line">            cout &lt;&lt; cnt &lt;&lt; <span class="string">&quot;\n&quot;</span>; <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j ++ ) &#123;</span><br><span class="line">                w[<span class="number">0</span>] = a, w[<span class="number">1</span>] = b, w[<span class="number">2</span>] = c;</span><br><span class="line">                <span class="keyword">if</span> ((i ^ j) &amp;&amp; w[i] &amp;&amp; (m[j] - w[j])) &#123;</span><br><span class="line">                    <span class="type">int</span> to = <span class="built_in">min</span>(w[i], m[j] - w[j]);</span><br><span class="line">                    w[i] -= to, w[j] += to;</span><br><span class="line">                    <span class="keyword">if</span> (st[w[<span class="number">0</span>]][w[<span class="number">1</span>]][w[<span class="number">2</span>]]) <span class="keyword">continue</span>;</span><br><span class="line">                    st[w[<span class="number">0</span>]][w[<span class="number">1</span>]][w[<span class="number">2</span>]] = <span class="literal">true</span>;</span><br><span class="line">                    q.<span class="built_in">push</span>(&#123;w[<span class="number">0</span>], w[<span class="number">1</span>], w[<span class="number">2</span>], cnt + <span class="number">1</span>&#125;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;NO\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<hr>
-<h2 id="4227-找路"><a href="#4227-找路" class="headerlink" title="4227. 找路"></a>4227. 找路</h2><ul>
-<li><p><a href="https://www.acwing.com/problem/content/description/4230/">原题链接</a></p>
-</li>
-<li><blockquote>
-<p>以 <code>Y, M</code>为起点两次 BFS 求得两个起点到所有可到达点的最短距离</p>
-</blockquote>
-</li>
-<li><p>ACcode</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> PII = pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> se second</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;/Users/c/algorithm/LOCAL/algo/debug.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug(...) 42</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">210</span>, INF = <span class="number">1</span> &lt;&lt; <span class="number">30</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> dx[] = &#123;<span class="number">-1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>&#125;, dy[] = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">1</span>&#125;;</span><br><span class="line"><span class="type">int</span> dist[<span class="number">2</span>][N][N];</span><br><span class="line"><span class="type">char</span> a[N][N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">    <span class="type">int</span> n, m;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &gt;&gt; m) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; j ++ )</span><br><span class="line">                cin &gt;&gt; a[i][j];</span><br><span class="line">        <span class="built_in">memset</span>(dist, <span class="number">0</span>, <span class="keyword">sizeof</span> dist);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> x = <span class="number">0</span>; x &lt; n; x ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> y = <span class="number">0</span>; y &lt; m; y ++ ) <span class="keyword">if</span> (a[x][y] == <span class="string">&#x27;Y&#x27;</span> || a[x][y] == <span class="string">&#x27;M&#x27;</span>) &#123;</span><br><span class="line">                <span class="type">int</span> c;</span><br><span class="line">                <span class="keyword">if</span> (a[x][y] == <span class="string">&#x27;Y&#x27;</span>) c = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">else</span> c = <span class="number">1</span>;</span><br><span class="line">                queue&lt;PII&gt; q; q.<span class="built_in">push</span>(&#123;x, y&#125;); dist[c][x][y] = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">while</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                    PII now = q.<span class="built_in">front</span>(); q.<span class="built_in">pop</span>();</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> o = <span class="number">0</span>; o &lt; <span class="number">4</span>; o ++ ) &#123;</span><br><span class="line">                        <span class="type">int</span> nex = now.fi + dx[o], ney = now.se + dy[o];</span><br><span class="line">                        <span class="keyword">if</span> (nex &lt; <span class="number">0</span> || nex &gt;= n || ney &lt; <span class="number">0</span> || ney &gt;= m || a[nex][ney] == <span class="string">&#x27;#&#x27;</span> || dist[c][nex][ney]) <span class="keyword">continue</span>;</span><br><span class="line">                        q.<span class="built_in">push</span>(&#123;nex, ney&#125;);</span><br><span class="line">                        dist[c][nex][ney] = dist[c][now.fi][now.se] + <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="type">int</span> ans = INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++ )</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; j ++ ) <span class="keyword">if</span> (a[i][j] == <span class="string">&#x27;@&#x27;</span> &amp;&amp; dist[<span class="number">0</span>][i][j] &amp;&amp; dist[<span class="number">1</span>][i][j])</span><br><span class="line">                ans = <span class="built_in">min</span>(ans, (dist[<span class="number">0</span>][i][j] + dist[<span class="number">1</span>][i][j] - <span class="number">2</span>) * <span class="number">11</span>);</span><br><span class="line">        cout &lt;&lt; ans &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<hr>
-<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Algorithm</tag>
       </tags>
   </entry>
 </search>
