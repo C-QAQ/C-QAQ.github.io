@@ -976,7 +976,7 @@
 </ul>
 </li>
 <li>URL格式：<ul>
-<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#112;&#115;&#119;&#64;&#x77;&#119;&#119;&#46;&#115;&#x6f;&#x6d;&#x65;&#x53;&#x63;&#x68;&#111;&#x6f;&#x6c;&#46;&#101;&#100;&#x75;">&#112;&#115;&#119;&#64;&#x77;&#119;&#119;&#46;&#115;&#x6f;&#x6d;&#x65;&#x53;&#x63;&#x68;&#111;&#x6f;&#x6c;&#46;&#101;&#100;&#x75;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
+<li>Prot:&#x2F;&#x2F;user:<a href="mailto:&#x70;&#115;&#x77;&#x40;&#x77;&#119;&#x77;&#46;&#x73;&#x6f;&#x6d;&#x65;&#x53;&#99;&#x68;&#111;&#111;&#x6c;&#46;&#x65;&#100;&#117;">&#x70;&#115;&#x77;&#x40;&#x77;&#119;&#x77;&#46;&#x73;&#x6f;&#x6d;&#x65;&#x53;&#99;&#x68;&#111;&#111;&#x6c;&#46;&#x65;&#100;&#117;</a>&#x2F;someDept&#x2F;pic.gif:port</li>
 <li><strong>协议名</strong>：Prot</li>
 <li><strong>用户名：口令</strong>：user:psw</li>
 <li><strong>主机名</strong>：<a href="http://www.someschool.edu/">www.someSchool.edu</a></li>
@@ -1244,7 +1244,7 @@
 <li>IP地址标识主机、路由器</li>
 <li>但IP地址不好记忆，不便人类使用(没有意义)</li>
 <li>人类一般倾向于使用一些有意义的字符串来标识Internet上的设备<blockquote>
-<p>例如:<a href="mailto:&#x71;&#x7a;&#104;&#x65;&#110;&#x67;&#x40;&#x75;&#115;&#116;&#99;&#x2e;&#x65;&#100;&#117;&#x2e;&#x63;&#110;">&#x71;&#x7a;&#104;&#x65;&#110;&#x67;&#x40;&#x75;&#115;&#116;&#99;&#x2e;&#x65;&#100;&#117;&#x2e;&#x63;&#110;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
+<p>例如:<a href="mailto:&#113;&#x7a;&#104;&#x65;&#x6e;&#x67;&#x40;&#117;&#115;&#116;&#x63;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#110;">&#113;&#x7a;&#104;&#x65;&#x6e;&#x67;&#x40;&#117;&#115;&#116;&#x63;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#110;</a> 所在的邮件服务器 <a href="http://www.ustc.edu.cn/">www.ustc.edu.cn</a> 所在的web服务器</p>
 </blockquote>
 </li>
 <li>存在着“字符串”—IP地址的转换的必要性</li>
@@ -1515,6 +1515,104 @@
 <li>查询放大，响应报文比查询报文大</li>
 <li>效果有限</li>
 </ul>
+<h2 id="P2P应用"><a href="#P2P应用" class="headerlink" title="P2P应用"></a>P2P应用</h2><ul>
+<li>没有(或极少)一直运行的服务器</li>
+<li>任意端系统都可以直接通信</li>
+<li>利用peer的服务能力</li>
+<li>Peer节点间歇上网，每次IP地址都有可能变化</li>
+<li>例子：<ul>
+<li>文件分发 (BitTorrent)</li>
+<li>流媒体(KanKan)</li>
+<li>VoIP (Skype)</li>
+</ul>
+</li>
+</ul>
+<h3 id="文件分发"><a href="#文件分发" class="headerlink" title="文件分发"></a>文件分发</h3><ul>
+<li>C&#x2F;S”O(n)”：<ul>
+<li>下载时间随客户端数量线性增加。（当客户多时，下载时间无法忍受）</li>
+</ul>
+</li>
+<li>P2P”O(logn)”：<ul>
+<li>每个客户端都可以提供服务，(上线的)客户端越多，拥有的服务能力越大。</li>
+<li>下载时间随客户端数量平滑增加。（性能表现优秀）</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220303152943.png"></p>
+<h3 id="P2P文件共享"><a href="#P2P文件共享" class="headerlink" title="P2P文件共享"></a>P2P文件共享</h3><p>例子</p>
+<ul>
+<li>Alice在其笔记本电脑上运行P2P客户端程序</li>
+<li>间歇性地连接到 Internet，每次从其ISP得到新的IP地址</li>
+<li>请求“双截棍.MP3”</li>
+<li>应用程序显示其他有“ 双截棍.MP3”拷贝的对等方</li>
+<li>Alice选择其中一个对等方，如Bob.</li>
+<li>文件从Bob’s PC传送到Alice的笔记本上:HTTP</li>
+<li>当Alice下载时，其他用户也可以从Alice处下载</li>
+<li>Alice的对等方既是一个Web客户端，也是一个瞬时Web服务器</li>
+</ul>
+<blockquote>
+<p><strong>所有的对等方都是服务器 &#x3D; 可扩展性好!</strong></p>
+</blockquote>
+<p>P2P文件共享的两大问题：</p>
+<ul>
+<li>如何定位所需资源</li>
+<li>如何处理对等方的加入与离开</li>
+<li>可能的方案：<ul>
+<li>集中</li>
+<li>分散</li>
+<li>半分散</li>
+</ul>
+</li>
+</ul>
+<p>P2P:集中式目录</p>
+<ul>
+<li>当对等方连接时，它告知中心服务器:<ul>
+<li>IP地址</li>
+<li>内容</li>
+</ul>
+</li>
+<li>Alice查询“双截棍.MP3”</li>
+<li>Alice从Bob(非服务器，拥有该资源)处请求文件</li>
+<li>纯在的问题：<strong>文件传输是分散的，而定位内容则是高度集中的</strong><ul>
+<li>单点故障</li>
+<li>性能瓶颈</li>
+<li>侵犯版权</li>
+</ul>
+</li>
+</ul>
+<p>P2P：查询洪泛:Gnutella</p>
+<ul>
+<li>全分布式<ul>
+<li>没有中心服务器</li>
+</ul>
+</li>
+<li>开放文件共享协议</li>
+<li>许多Gnutella客户端实现了Gnutella协议<ul>
+<li>类似HTTP有许多的浏览器</li>
+</ul>
+</li>
+</ul>
+<p>覆盖网络:图</p>
+<ul>
+<li>如果X和Y之间有一个TCP连接，则二者之间存在一条边</li>
+<li>所有活动的对等方和边就是覆盖网络</li>
+<li>边并不是物理链路</li>
+<li>给定一个对等方，通常所连接的节点少于10个</li>
+</ul>
+<p>Gnutella:协议</p>
+<ul>
+<li>在已有的TCP连接上发送查询报文</li>
+<li>对等方转发查询报文</li>
+<li>以反方向返回查询命中报文</li>
+</ul>
+<p>Gnutella:对等方加入</p>
+<ol>
+<li>对等方X必须首先发现某些已经在覆盖网络中的其他对等方:使用可用对等方列表自己维持一张对等方列表(经常开机的对等方的IP)联系维持列表的Gnutella站点</li>
+<li>X接着试图与该列表上的对等方建立TCP连接，直到与某个对等方Y建立连接</li>
+<li>X向Y发送一个Ping报文，Y转发该Ping报文</li>
+<li>所有收到Ping报文的对等方以Pong报文响应: IP地址、共享文件的数量及总字节数</li>
+<li>X收到许多Pong报文，然后它能建立其他TCP连接</li>
+</ol>
 <link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
       <tags>
         <tag>计算机网络</tag>
