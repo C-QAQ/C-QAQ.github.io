@@ -1284,7 +1284,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff7fff;
+  background: #26c887;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2780,7 +2780,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
-  background-image: url("https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/wallhaven-6ogxmq.jpg");
+  background-image: url("https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/picgo/4a92bb_30_BlackSwan2_4k.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
