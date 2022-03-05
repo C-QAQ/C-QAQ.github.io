@@ -20,15 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="C___&#96;s blog">
-<meta property="og:url" content="http://example.com/tags/test/index.html">
+  <meta name="description" content="第一章：概论目标 了解基本术语和概念 掌握网络的基本原理 为后续章节更深入的学习打下基础 例子： 以Internet为例子 Internet只是各种网络中的一种，只是比较普及。      本章内容 什么是Internet? 什么是协议？ 大致介绍Internet的工作模式   网络边缘（边缘） 接入网，物理媒体（中间） 网络核心：分组交换、线路交换（核心） Internet&#x2F;ISP 结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络自顶向下第七版">
+<meta property="og:url" content="http://example.com/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E7%AC%AC%E4%B8%83%E7%89%88/index.html">
 <meta property="og:site_name" content="C___&#96;s blog">
+<meta property="og:description" content="第一章：概论目标 了解基本术语和概念 掌握网络的基本原理 为后续章节更深入的学习打下基础 例子： 以Internet为例子 Internet只是各种网络中的一种，只是比较普及。      本章内容 什么是Internet? 什么是协议？ 大致介绍Internet的工作模式   网络边缘（边缘） 接入网，物理媒体（中间） 网络核心：分组交换、线路交换（核心） Internet&#x2F;ISP 结构">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220305184712.png">
+<meta property="article:published_time" content="2022-03-05T08:58:28.000Z">
+<meta property="article:modified_time" content="2022-03-05T10:52:42.890Z">
 <meta property="article:author" content="C___">
+<meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220305184712.png">
 
-<link rel="canonical" href="http://example.com/tags/test/">
+<link rel="canonical" href="http://example.com/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E7%AC%AC%E4%B8%83%E7%89%88/">
 
 
 <script id="page-configurations">
@@ -36,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: test | C___`s blog</title>
+  <title>计算机网络自顶向下第七版 | C___`s blog</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219986761-1"></script>
     <script>
@@ -194,57 +201,258 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E7%AC%AC%E4%B8%83%E7%89%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220213224428.png">
+      <meta itemprop="name" content="C___">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="C___`s blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          计算机网络自顶向下第七版
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-05 16:58:28 / 修改时间：18:52:42" itemprop="dateCreated datePublished" datetime="2022-03-05T16:58:28+08:00">2022-03-05</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">test
-          <small>标签</small>
-        </h2>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E7%AC%AC%E4%B8%83%E7%89%88/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E7%AC%AC%E4%B8%83%E7%89%88/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>927</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h1 id="第一章：概论"><a href="#第一章：概论" class="headerlink" title="第一章：概论"></a>第一章：概论</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
+<li>了解基本术语和概念</li>
+<li>掌握网络的基本原理</li>
+<li>为后续章节更深入的学习打下基础</li>
+<li>例子：<ul>
+<li>以Internet为例子<blockquote>
+<p>Internet只是各种网络中的一种，只是比较普及。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="本章内容"><a href="#本章内容" class="headerlink" title="本章内容"></a>本章内容</h2><ol>
+<li>什么是Internet?</li>
+<li>什么是协议？<blockquote>
+<p>大致介绍Internet的工作模式</p>
+</blockquote>
+</li>
+<li>网络边缘（边缘）</li>
+<li>接入网，物理媒体（中间）</li>
+<li>网络核心：分组交换、线路交换（核心）</li>
+<li>Internet&#x2F;ISP 结构<blockquote>
+<p>4 &amp; 5 &amp; 6 计算机网络具体结构</p>
+</blockquote>
+</li>
+<li>新能：丢包、延时、吞吐量</li>
+<li>协议层次、服务模型</li>
+<li>历史</li>
+</ol>
+<h2 id="什么是Internet？"><a href="#什么是Internet？" class="headerlink" title="什么是Internet？"></a>什么是Internet？</h2><h3 id="什么是Internet：从具体构成角度"><a href="#什么是Internet：从具体构成角度" class="headerlink" title="什么是Internet：从具体构成角度"></a>什么是Internet：从具体构成角度</h3><ul>
+<li>节点<ul>
+<li>主机以及其上运行的应用程序<ul>
+<li><blockquote>
+<p>数以亿计的、互联的计算设备</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>主机：手机、电脑、server…</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>主机 &#x3D; 端系统</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>运行的<strong>网络应用程序</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>路由器、交换机等网络交换设备<ul>
+<li><blockquote>
+<p>分组交换设备：转发分组（packets）</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>交换机工作在链路层、路由器工作在网络层</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>边：通信链路<ul>
+<li><strong>接入网链路</strong>：主机连接到互联网的链路</li>
+<li><strong>主干链路</strong>：路由器间的链路<ul>
+<li><blockquote>
+<p>光纤、同轴电缆、无线电、卫星</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>传输速率 &#x3D; 宽带（bps）</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>协议（协议就是计算机网络里面的交通法规、标准、控制发送、接收消息）<ul>
+<li>层次不同分为几种（类似于编程里的接口）：<ul>
+<li>物理层协议、链路层协议、网络层协议（IP）、传输层协议（TCP、UDP）、应用层协议</li>
+</ul>
+</li>
+<li><blockquote>
+<p>协议：是一种约定，不同的互联网厂商操作系统只要遵循了相同的协议就能实现数据的互通、共享。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Internet：“网络的网络”（我国的有：教育科研网、电信、移动、联通）<ul>
+<li>松散的层次结构、互连的ISP（网络服务运营商）</li>
+<li>公共Internet and 专用Internet</li>
+<li>标准：<ul>
+<li>RFC</li>
+<li>IETF</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="什么是Internet：从服务角度"><a href="#什么是Internet：从服务角度" class="headerlink" title="什么是Internet：从服务角度"></a>什么是Internet：从服务角度</h3><ul>
+<li>使用通讯设施进行通讯的分布式应用<ul>
+<li>Web、VoIP、email、分布式游戏、电子商务、社交网络…</li>
+</ul>
+</li>
+<li>通信基础设施为apps提供编程接口（通信服务）<ul>
+<li>将发送和接收数据的apps与互联网连接起来</li>
+<li>为app应用提供服务选择，类似于邮政服务<ul>
+<li>无连接不可靠服务</li>
+<li>面向连接的可靠服务</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="新型互联网设备"><a href="#新型互联网设备" class="headerlink" title="新型互联网设备"></a>新型互联网设备</h2><p>物联网时代的新型设备：联网的冰箱、联网的工具、联网的鞋子、联网的汽车</p>
+<h2 id="什么是协议？"><a href="#什么是协议？" class="headerlink" title="什么是协议？"></a>什么是协议？</h2><p>协议定义了在两个或多个通信实体之间交换的<strong>报文格式</strong>和<strong>次序</strong>，以及在报文传输或接收或其他事件方面所采取的<strong>动作</strong></p>
+<ul>
+<li>人类协议和计算机网络协议示例：<ul>
+<li><img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220305184712.png"></li>
+</ul>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-10T22:48:29+08:00"
-              content="2022-02-10">
-          02-10
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220210112628.png" alt="C___ wechatpay">
+        <p>wechatpay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://sc-figure-bed.obs.cn-north-4.myhuaweicloud.com/20220210114020.png" alt="C___ alipay">
+        <p>alipay</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/10/test/" itemprop="url">
-            <span itemprop="name">test</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag"><i class="fa fa-tag"></i> 计算机网络</a>
+          </div>
+
+        
+
+
+        
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -291,6 +499,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%A6%82%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">第一章：概论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFInternet%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">什么是Internet？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFInternet%EF%BC%9A%E4%BB%8E%E5%85%B7%E4%BD%93%E6%9E%84%E6%88%90%E8%A7%92%E5%BA%A6"><span class="nav-number">1.3.1.</span> <span class="nav-text">什么是Internet：从具体构成角度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFInternet%EF%BC%9A%E4%BB%8E%E6%9C%8D%E5%8A%A1%E8%A7%92%E5%BA%A6"><span class="nav-number">1.3.2.</span> <span class="nav-text">什么是Internet：从服务角度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%9E%8B%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%BE%E5%A4%87"><span class="nav-number">1.4.</span> <span class="nav-text">新型互联网设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E8%AE%AE%EF%BC%9F"><span class="nav-number">1.5.</span> <span class="nav-text">什么是协议？</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
